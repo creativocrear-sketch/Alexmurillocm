@@ -82,7 +82,7 @@ export default function Navbar() {
           <button
             onClick={toggleLanguage}
             className="flex items-center gap-2 text-[#1e3a5f] dark:text-white font-medium text-sm hover:text-[#2d5f3f] dark:hover:text-[#60a5fa] transition-colors font-[Poppins] px-3 py-2 rounded-lg hover:bg-[#f5f7fa] dark:hover:bg-slate-800"
-            title={language === "es" ? "Switch to English" : "Cambiar a español"}
+            title={language === "es" ? "Switch to English" : "Cambiar a espanol"}
           >
             <Languages className="w-4 h-4" />
             <span className="uppercase font-semibold">{language}</span>
@@ -137,7 +137,7 @@ export default function Navbar() {
               <Languages className="w-4 h-4" />
               <span className="uppercase font-semibold">{language}</span>
               <span className="text-sm text-[#6b7280] dark:text-slate-400">
-                {language === "es" ? "→ English" : "→ Español"}
+                {language === "es" ? "→ English" : "→ Espanol"}
               </span>
             </button>
             

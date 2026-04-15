@@ -7,49 +7,49 @@
 **Movimiento de Diseño**: Neo-corporativo con toques de lujo sutil, inspirado en consultoras de alto nivel como McKinsey o Deloitte.
 
 **Principios Fundamentales**:
-1. Jerarquía visual clara con tipografía serif para títulos y sans-serif para cuerpo
+1. Jerarquia visual clara con tipografia serif para titulos y sans-serif para cuerpo
 2. Paleta restringida navy/verde/dorado que transmite autoridad y confianza
 3. Espaciado generoso que respira profesionalismo
-4. Transiciones suaves que sugieren sofisticación
+4. Transiciones suaves que sugieren sofisticacion
 
-**Filosofía de Color**: Navy (#1e3a5f) como color de autoridad y confianza, verde oscuro (#2d5f3f) como color de crecimiento y resultados, dorado (#d4af37) como acento de excelencia y premium. El blanco como lienzo limpio.
+**Filosofia de Color**: Navy (#1e3a5f) como color de autoridad y confianza, verde oscuro (#2d5f3f) como color de crecimiento y resultados, dorado (#d4af37) como acento de excelencia y premium. El blanco como lienzo limpio.
 
-**Paradigma de Layout**: Asimétrico con hero de dos columnas (texto 55% / imagen 45%), cards en grid de 3 columnas, secciones alternando fondos blancos y gris muy claro.
+**Paradigma de Layout**: Asimetrico con hero de dos columnas (texto 55% / imagen 45%), cards en grid de 3 columnas, secciones alternando fondos blancos y gris muy claro.
 
-**Elementos Distintivos**: Badges con fondo verde suave para categorías, iconos en contenedores redondeados con fondo teal, líneas doradas sutiles como separadores.
+**Elementos Distintivos**: Badges con fondo verde suave para categorias, iconos en contenedores redondeados con fondo teal, lineas doradas sutiles como separadores.
 
-**Filosofía de Interacción**: Hover suaves con elevación de sombra, transiciones de 300ms, scroll suave entre secciones.
+**Filosofia de Interaccion**: Hover suaves con elevacion de sombra, transiciones de 300ms, scroll suave entre secciones.
 
-**Animación**: Fade-in desde abajo al hacer scroll, counters animados para estadísticas, hover con scale sutil en cards.
+**Animacion**: Fade-in desde abajo al hacer scroll, counters animados para estadisticas, hover con scale sutil en cards.
 
-**Sistema Tipográfico**: Lora (serif) para títulos h1-h3, Poppins (sans-serif) para body y UI elements.
+**Sistema Tipografico**: Lora (serif) para titulos h1-h3, Poppins (sans-serif) para body y UI elements.
 </text>
 <probability>0.08</probability>
 </response>
 
 <response>
 <text>
-## Idea 2: Digital Futurism — Tecnología Vanguardista
+## Idea 2: Digital Futurism — Tecnologia Vanguardista
 
-**Movimiento de Diseño**: Futurismo digital con glassmorphism y gradientes neón.
+**Movimiento de Diseño**: Futurismo digital con glassmorphism y gradientes neon.
 
 **Principios Fundamentales**:
 1. Fondos oscuros con acentos brillantes
 2. Efectos de vidrio esmerilado (glassmorphism)
-3. Gradientes de neón en azul y verde
-4. Tipografía geométrica moderna
+3. Gradientes de neon en azul y verde
+4. Tipografia geometrica moderna
 
-**Filosofía de Color**: Fondo oscuro (#0a0f1a) con gradientes de cyan a verde neón, acentos en magenta.
+**Filosofia de Color**: Fondo oscuro (#0a0f1a) con gradientes de cyan a verde neon, acentos en magenta.
 
 **Paradigma de Layout**: Full-width sections con overlapping elements, floating cards con blur backdrop.
 
-**Elementos Distintivos**: Partículas animadas en el fondo, bordes con glow neón, iconos con efecto holográfico.
+**Elementos Distintivos**: Particulas animadas en el fondo, bordes con glow neon, iconos con efecto holografico.
 
-**Filosofía de Interacción**: Hover con glow intenso, parallax en scroll, cursor personalizado.
+**Filosofia de Interaccion**: Hover con glow intenso, parallax en scroll, cursor personalizado.
 
-**Animación**: Partículas flotantes, typing effect en títulos, morphing shapes.
+**Animacion**: Particulas flotantes, typing effect en titulos, morphing shapes.
 
-**Sistema Tipográfico**: Space Grotesk para títulos, DM Sans para body.
+**Sistema Tipografico**: Space Grotesk para titulos, DM Sans para body.
 </text>
 <probability>0.03</probability>
 </response>
@@ -58,31 +58,31 @@
 <text>
 ## Idea 3: Warm Authority — Calidez Profesional Colombiana
 
-**Movimiento de Diseño**: Diseño editorial cálido, inspirado en revistas de negocios latinoamericanas con identidad cultural.
+**Movimiento de Diseño**: Diseno editorial calido, inspirado en revistas de negocios latinoamericanas con identidad cultural.
 
 **Principios Fundamentales**:
 1. Calidez humana combinada con profesionalismo
-2. Fotografía prominente con overlays cálidos
-3. Tipografía editorial con personalidad
+2. Fotografia prominente con overlays calidos
+3. Tipografia editorial con personalidad
 4. Colores tierra con acentos vibrantes
 
-**Filosofía de Color**: Terracota y dorado como colores principales, navy como soporte, crema como fondo.
+**Filosofia de Color**: Terracota y dorado como colores principales, navy como soporte, crema como fondo.
 
-**Paradigma de Layout**: Magazine-style con columnas asimétricas, pull quotes grandes, imágenes a sangre completa.
+**Paradigma de Layout**: Magazine-style con columnas asimetricas, pull quotes grandes, imagenes a sangre completa.
 
-**Elementos Distintivos**: Bordes decorativos con patrones geométricos colombianos, fotografías con filtro cálido, quotes destacados.
+**Elementos Distintivos**: Bordes decorativos con patrones geometricos colombianos, fotografias con filtro calido, quotes destacados.
 
-**Filosofía de Interacción**: Transiciones orgánicas, hover con cambio de temperatura de color.
+**Filosofia de Interaccion**: Transiciones organicas, hover con cambio de temperatura de color.
 
-**Animación**: Reveal suave tipo magazine, parallax en imágenes, text reveal letter by letter.
+**Animacion**: Reveal suave tipo magazine, parallax en imagenes, text reveal letter by letter.
 
-**Sistema Tipográfico**: Playfair Display para títulos, Source Sans Pro para body.
+**Sistema Tipografico**: Playfair Display para titulos, Source Sans Pro para body.
 </text>
 <probability>0.04</probability>
 </response>
 
 ---
 
-## Decisión: Idea 1 — Corporate Elegance
+## Decision: Idea 1 — Corporate Elegance
 
-Se selecciona la Idea 1 porque replica fielmente el diseño original de la página que el usuario quiere migrar, manteniendo la paleta navy/verde/dorado, la tipografía Lora+Poppins, y el layout profesional corporativo que ya estaba establecido.
+Se selecciona la Idea 1 porque replica fielmente el diseno original de la pagina que el usuario quiere migrar, manteniendo la paleta navy/verde/dorado, la tipografia Lora+Poppins, y el layout profesional corporativo que ya estaba establecido.
