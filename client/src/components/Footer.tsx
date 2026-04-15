@@ -3,48 +3,90 @@
  * Colors: Navy #1e3a5f, Green #2d5f3f, Gold #d4af37
  * Font: Lora (headings), Poppins (body)
  */
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
+  const { language } = useLanguage();
+
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
+  const content =
+    language === "es"
+      ? {
+          description:
+            "Consultor Senior en Estrategia Digital, Omnicanalidad y WhatsApp Business API.",
+          cycling: "Ciclista recreativo.",
+          navigation: "NavegaciÃ³n",
+          services: "Servicios",
+          contact: "Contacto",
+          links: [
+            { label: "Servicios", id: "servicios" },
+            { label: "Experiencia", id: "experiencia" },
+            { label: "Contacto", id: "contacto" },
+          ],
+          cyclingRoute: "Ciclismo de ruta",
+          serviceLinks: [
+            "WhatsApp Business API",
+            "Estrategia omnicanal",
+            "CapacitaciÃ³n digital",
+          ],
+          rights: "Todos los derechos reservados.",
+        }
+      : {
+          description:
+            "Senior Consultant in Digital Strategy, Omnichannel Communication, and WhatsApp Business API.",
+          cycling: "Recreational cyclist.",
+          navigation: "Navigation",
+          services: "Services",
+          contact: "Contact",
+          links: [
+            { label: "Services", id: "servicios" },
+            { label: "Experience", id: "experiencia" },
+            { label: "Contact", id: "contacto" },
+          ],
+          cyclingRoute: "Road Cycling",
+          serviceLinks: [
+            "WhatsApp Business API",
+            "Omnichannel strategy",
+            "Digital training",
+          ],
+          rights: "All rights reserved.",
+        };
+
   return (
-    <footer className="bg-[#0f1a2e] text-white">
+    <footer className="bg-[#0f1a2e] dark:bg-slate-950 text-white">
       <div className="container py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-9 h-9 rounded-lg bg-[#2d5f3f] text-white flex items-center justify-center font-bold text-sm font-[Poppins]">
+              <span className="w-9 h-9 rounded-lg bg-[#2d5f3f] dark:bg-green-600 text-white flex items-center justify-center font-bold text-sm font-[Poppins]">
                 AM
               </span>
               <span className="text-white font-semibold text-lg font-[Poppins]">
                 Alex Murillo
               </span>
             </div>
-            <p className="text-white/60 text-sm leading-relaxed font-[Poppins]">
-              Consultor Senior en Estrategia Digital, Omnicanalidad y WhatsApp Business API.
+            <p className="text-white/60 dark:text-slate-400 text-sm leading-relaxed font-[Poppins]">
+              {content.description}
             </p>
-            <p className="text-white/60 text-sm leading-relaxed font-[Poppins] mt-1">
-              Ciclista recreativo.
+            <p className="text-white/60 dark:text-slate-400 text-sm leading-relaxed font-[Poppins] mt-1">
+              {content.cycling}
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm font-[Poppins]">Navegación</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm font-[Poppins]">
+              {content.navigation}
+            </h4>
             <ul className="space-y-2">
-              {[
-                { label: "Servicios", id: "servicios" },
-                { label: "Experiencia", id: "experiencia" },
-                { label: "Contacto", id: "contacto" },
-              ].map((item) => (
+              {content.links.map((item) => (
                 <li key={item.id}>
                   <button
                     onClick={() => scrollTo(item.id)}
-                    className="text-white/60 text-sm hover:text-white transition-colors font-[Poppins]"
+                    className="text-white/60 dark:text-slate-400 text-sm hover:text-white transition-colors font-[Poppins]"
                   >
                     {item.label}
                   </button>
@@ -53,23 +95,24 @@ export default function Footer() {
               <li>
                 <a
                   href="/ciclismo-ruta"
-                  className="text-white/60 text-sm hover:text-white transition-colors font-[Poppins]"
+                  className="text-white/60 dark:text-slate-400 text-sm hover:text-white transition-colors font-[Poppins]"
                 >
-                  Ciclismo de ruta
+                  {content.cyclingRoute}
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm font-[Poppins]">Servicios</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm font-[Poppins]">
+              {content.services}
+            </h4>
             <ul className="space-y-2">
-              {["WhatsApp Business API", "Estrategia omnicanal", "Capacitación digital"].map((item) => (
+              {content.serviceLinks.map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => scrollTo("servicios")}
-                    className="text-white/60 text-sm hover:text-white transition-colors font-[Poppins]"
+                    className="text-white/60 dark:text-slate-400 text-sm hover:text-white transition-colors font-[Poppins]"
                   >
                     {item}
                   </button>
@@ -78,14 +121,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm font-[Poppins]">Contacto</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm font-[Poppins]">
+              {content.contact}
+            </h4>
             <ul className="space-y-2">
               <li>
                 <a
                   href="mailto:alexmurillo@crearcomunicaciones.net"
-                  className="text-white/60 text-sm hover:text-white transition-colors font-[Poppins]"
+                  className="text-white/60 dark:text-slate-400 text-sm hover:text-white transition-colors font-[Poppins]"
                 >
                   alexmurillo@crearcomunicaciones.net
                 </a>
@@ -95,7 +139,7 @@ export default function Footer() {
                   href="https://wa.me/573103882759"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/60 text-sm hover:text-white transition-colors font-[Poppins]"
+                  className="text-white/60 dark:text-slate-400 text-sm hover:text-white transition-colors font-[Poppins]"
                 >
                   WhatsApp
                 </a>
@@ -104,13 +148,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-white/10 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/40 text-xs font-[Poppins]">
-            &copy; 2026 Alex Murillo. Todos los derechos reservados.
+        <div className="border-t border-white/10 dark:border-slate-800 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-white/40 dark:text-slate-500 text-xs font-[Poppins]">
+            &copy; 2026 Alex Murillo. {content.rights}
           </p>
 
-          {/* Social icons */}
           <div className="flex gap-3">
             {[
               { name: "LinkedIn", href: "#", icon: "in" },
@@ -124,7 +166,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center text-white/60 hover:bg-[#2d5f3f] hover:text-white transition-colors"
+                className="w-8 h-8 bg-white/10 dark:bg-slate-800 rounded-full flex items-center justify-center text-white/60 dark:text-slate-400 hover:bg-[#2d5f3f] dark:hover:bg-green-600 hover:text-white transition-colors"
               >
                 {social.icon === "in" && (
                   <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -141,7 +183,6 @@ export default function Footer() {
               </a>
             ))}
           </div>
-
         </div>
       </div>
     </footer>

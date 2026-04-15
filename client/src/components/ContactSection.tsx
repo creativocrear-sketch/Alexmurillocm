@@ -4,63 +4,112 @@
  * Font: Lora (headings), Poppins (body)
  */
 import { MessageCircle, Mail, Phone } from "lucide-react";
-
-const contactMethods = [
-  {
-    icon: Phone,
-    title: "Teléfono",
-    detail: "+57 310 388 2759",
-    href: "tel:+573103882759",
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    detail: "alexmurillo@crearcomunicaciones.net",
-    href: "mailto:alexmurillo@crearcomunicaciones.net",
-  },
-  {
-    icon: MessageCircle,
-    title: "WhatsApp",
-    detail: "Disponible 24/7",
-    href: "https://wa.me/573103882759",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function ContactSection() {
+  const { language } = useLanguage();
+
+  const content =
+    language === "es"
+      ? {
+          badge: "Contacto",
+          title: "Â¿Listo para transformar tu negocio?",
+          description:
+            "Agendar una consulta es el primer paso. Te ayudarÃ© a diseÃ±ar la estrategia omnicanal perfecta para tu empresa.",
+          cardTitle: "ConsultorÃ­a para automatizar tu negocio",
+          cardDescription:
+            "Analiza tu situaciÃ³n actual y descubre cÃ³mo WhatsApp Business API puede multiplicar tus ventas. SesiÃ³n de 30 minutos, sin compromiso.",
+          whatsappDetail: "Mensaje directo",
+          emailDetail: "Respuesta en 24h",
+          socialLabel: "SÃ­gueme en redes sociales",
+          contactMethods: [
+            {
+              icon: Phone,
+              title: "TelÃ©fono",
+              detail: "+57 310 388 2759",
+              href: "tel:+573103882759",
+            },
+            {
+              icon: Mail,
+              title: "Email",
+              detail: "alexmurillo@crearcomunicaciones.net",
+              href: "mailto:alexmurillo@crearcomunicaciones.net",
+            },
+            {
+              icon: MessageCircle,
+              title: "WhatsApp",
+              detail: "Disponible 24/7",
+              href: "https://wa.me/573103882759",
+            },
+          ],
+        }
+      : {
+          badge: "Contact",
+          title: "Ready to Transform Your Business?",
+          description:
+            "Scheduling a consultation is the first step. I will help you design the ideal omnichannel strategy for your company.",
+          cardTitle: "Consulting to Automate Your Business",
+          cardDescription:
+            "Review your current situation and discover how WhatsApp Business API can multiply your sales. 30-minute session, no commitment.",
+          whatsappDetail: "Direct message",
+          emailDetail: "Reply within 24h",
+          socialLabel: "Follow me on social media",
+          contactMethods: [
+            {
+              icon: Phone,
+              title: "Phone",
+              detail: "+57 310 388 2759",
+              href: "tel:+573103882759",
+            },
+            {
+              icon: Mail,
+              title: "Email",
+              detail: "alexmurillo@crearcomunicaciones.net",
+              href: "mailto:alexmurillo@crearcomunicaciones.net",
+            },
+            {
+              icon: MessageCircle,
+              title: "WhatsApp",
+              detail: "Available 24/7",
+              href: "https://wa.me/573103882759",
+            },
+          ],
+        };
+
   return (
-    <section id="contacto" className="py-20 bg-white">
+    <section id="contacto" className="py-20 bg-white dark:bg-slate-900">
       <div className="container">
-        {/* Section header */}
         <div className="text-center mb-14">
-          <span className="inline-block bg-[#2d5f3f]/10 text-[#2d5f3f] text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4 font-[Poppins]">
-            Contacto
+          <span className="inline-block bg-[#2d5f3f]/10 dark:bg-green-500/10 text-[#2d5f3f] dark:text-green-400 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-4 font-[Poppins]">
+            {content.badge}
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
-            ¿Listo para transformar tu negocio?
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] dark:text-white mb-4">
+            {content.title}
           </h2>
-          <p className="text-[#6b7280] max-w-2xl mx-auto font-[Poppins]">
-            Agendar una consulta es el primer paso. Te ayudaré a diseñar la estrategia omnicanal perfecta para tu empresa.
+          <p className="text-[#6b7280] dark:text-slate-300 max-w-2xl mx-auto font-[Poppins]">
+            {content.description}
           </p>
         </div>
 
-        {/* CTA Card */}
-        <div className="bg-gradient-to-br from-[#1e3a5f] to-[#2d5f3f] rounded-2xl p-8 md:p-10 text-center mb-12 max-w-3xl mx-auto shadow-xl">
+        <div className="bg-gradient-to-br from-[#1e3a5f] dark:from-blue-700 to-[#2d5f3f] dark:to-slate-800 rounded-2xl p-8 md:p-10 text-center mb-12 max-w-3xl mx-auto shadow-xl">
           <h3 className="text-2xl font-bold text-white mb-3 font-[Lora]">
-            Consultoría para automatizar tu negocio
+            {content.cardTitle}
           </h3>
           <p className="text-white/80 mb-8 font-[Poppins] text-sm leading-relaxed">
-            Analiza tu situación actual y descubre cómo WhatsApp Business API puede multiplicar tus ventas. Sesión de 30 minutos, sin compromiso.
+            {content.cardDescription}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://wa.me/573103882759"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-[#1e3a5f] px-6 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 font-[Poppins]"
+              className="bg-white text-[#1e3a5f] dark:text-blue-600 px-6 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 font-[Poppins]"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp
-              <span className="text-[#6b7280] font-normal text-xs">Mensaje directo</span>
+              <span className="text-[#6b7280] dark:text-slate-600 font-normal text-xs">
+                {content.whatsappDetail}
+              </span>
             </a>
             <a
               href="mailto:alexmurillo@crearcomunicaciones.net"
@@ -68,37 +117,39 @@ export default function ContactSection() {
             >
               <Mail className="w-5 h-5" />
               Email
-              <span className="text-white/60 font-normal text-xs">Respuesta en 24h</span>
+              <span className="text-white/60 font-normal text-xs">
+                {content.emailDetail}
+              </span>
             </a>
           </div>
         </div>
 
-        {/* Contact methods */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-          {contactMethods.map((method, i) => (
+          {content.contactMethods.map((method, i) => (
             <a
               key={i}
               href={method.href}
               target={method.href.startsWith("http") ? "_blank" : undefined}
               rel={method.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="bg-[#f5f7fa] rounded-xl p-6 text-center hover:shadow-md transition-all duration-300 border border-transparent hover:border-[#e5e7eb] group"
+              className="bg-[#f5f7fa] dark:bg-slate-800 rounded-xl p-6 text-center hover:shadow-md transition-all duration-300 border border-transparent hover:border-[#e5e7eb] dark:hover:border-slate-700 group"
             >
-              <div className="w-14 h-14 bg-[#2d5f3f]/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-[#2d5f3f]/20 transition-colors">
-                <method.icon className="w-6 h-6 text-[#2d5f3f]" />
+              <div className="w-14 h-14 bg-[#2d5f3f]/10 dark:bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-[#2d5f3f]/20 dark:group-hover:bg-green-500/20 transition-colors">
+                <method.icon className="w-6 h-6 text-[#2d5f3f] dark:text-green-400" />
               </div>
-              <h4 className="text-[#1e3a5f] font-semibold mb-1 font-[Poppins]">
+              <h4 className="text-[#1e3a5f] dark:text-white font-semibold mb-1 font-[Poppins]">
                 {method.title}
               </h4>
-              <p className="text-sm text-[#6b7280] font-[Poppins]">
+              <p className="text-sm text-[#6b7280] dark:text-slate-300 font-[Poppins]">
                 {method.detail}
               </p>
             </a>
           ))}
         </div>
 
-        {/* Social media */}
         <div className="text-center mt-12">
-          <p className="text-[#6b7280] text-sm mb-4 font-[Poppins]">Sígueme en redes sociales</p>
+          <p className="text-[#6b7280] dark:text-slate-300 text-sm mb-4 font-[Poppins]">
+            {content.socialLabel}
+          </p>
           <div className="flex justify-center gap-4">
             {[
               { name: "LinkedIn", href: "#", icon: "in" },
@@ -112,7 +163,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="w-10 h-10 bg-[#2d5f3f] rounded-full flex items-center justify-center text-white hover:bg-[#1e3a5f] transition-colors"
+                className="w-10 h-10 bg-[#2d5f3f] dark:bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-[#1e3a5f] dark:hover:bg-blue-700 transition-colors"
               >
                 {social.icon === "in" && (
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>

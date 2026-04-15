@@ -6,10 +6,9 @@
  */
 import { useState, useRef, useEffect } from "react";
 import { Share2, X, Check, Link } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const SITE_URL = "https://alexmurillo-jjodbncg.manus.space";
-const SITE_TITLE = "Alex Murillo - Consultor de Omnicanalidad y WhatsApp Business API";
-const SITE_DESCRIPTION = "Estrategias omnicanal con WhatsApp Business API que centralizan tus ventas y atención al cliente. 35+ años de experiencia.";
 const STRAVA_PROFILE = "https://www.strava.com/athletes/31661633";
 
 interface ShareOption {
@@ -19,7 +18,6 @@ interface ShareOption {
   action: () => void;
 }
 
-// Social link buttons (always visible when expanded)
 const socialLinks = [
   {
     name: "Strava",
@@ -78,6 +76,33 @@ export default function ShareButton() {
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [copied, setCopied] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const { language } = useLanguage();
+
+  const currentUrl =
+    typeof window === "undefined" ? SITE_URL : window.location.href;
+
+  const shareMeta =
+    language === "es"
+      ? {
+          title: "Alex Murillo - Consultor de Omnicanalidad y WhatsApp Business API",
+          description:
+            "Estrategias omnicanal con WhatsApp Business API que centralizan tus ventas y atenciÃ³n al cliente. 35+ aÃ±os de experiencia.",
+          shareIn: "Compartir en:",
+          copied: "Enlace copiado",
+          copy: "Copiar enlace",
+          sharePage: "Compartir esta pÃ¡gina",
+          social: "Redes sociales",
+        }
+      : {
+          title: "Alex Murillo - Omnichannel and WhatsApp Business API Consultant",
+          description:
+            "Omnichannel strategies powered by WhatsApp Business API to centralize sales and customer support. 35+ years of experience.",
+          shareIn: "Share on:",
+          copied: "Link copied",
+          copy: "Copy link",
+          sharePage: "Share this page",
+          social: "Social links",
+        };
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -86,12 +111,13 @@ export default function ShareButton() {
         setShowShareMenu(false);
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const copyLink = () => {
-    navigator.clipboard.writeText(SITE_URL).then(() => {
+    navigator.clipboard.writeText(currentUrl).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
@@ -108,7 +134,7 @@ export default function ShareButton() {
       ),
       action: () => {
         window.open(
-          `https://wa.me/?text=${encodeURIComponent(`${SITE_TITLE}\n${SITE_DESCRIPTION}\n${SITE_URL}`)}`,
+          `https://wa.me/?text=${encodeURIComponent(`${shareMeta.title}\n${shareMeta.description}\n${currentUrl}`)}`,
           "_blank"
         );
       },
@@ -123,7 +149,7 @@ export default function ShareButton() {
       ),
       action: () => {
         window.open(
-          `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(SITE_URL)}`,
+          `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`,
           "_blank"
         );
       },
@@ -138,7 +164,7 @@ export default function ShareButton() {
       ),
       action: () => {
         window.open(
-          `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(SITE_URL)}`,
+          `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
           "_blank"
         );
       },
@@ -153,7 +179,7 @@ export default function ShareButton() {
       ),
       action: () => {
         window.open(
-          `https://twitter.com/intent/tweet?text=${encodeURIComponent(SITE_TITLE)}&url=${encodeURIComponent(SITE_URL)}`,
+          `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareMeta.title)}&url=${encodeURIComponent(currentUrl)}`,
           "_blank"
         );
       },
@@ -168,7 +194,7 @@ export default function ShareButton() {
       ),
       action: () => {
         window.open(
-          `https://t.me/share/url?url=${encodeURIComponent(SITE_URL)}&text=${encodeURIComponent(SITE_TITLE)}`,
+          `https://t.me/share/url?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(shareMeta.title)}`,
           "_blank"
         );
       },
@@ -177,7 +203,6 @@ export default function ShareButton() {
 
   return (
     <div ref={containerRef} className="fixed bottom-6 right-6 z-50 font-[Poppins]">
-      {/* Social link buttons - appear above the main button when expanded */}
       <div
         className={`absolute bottom-16 right-0 flex flex-col items-center gap-3 transition-all duration-300 ${
           isExpanded
@@ -185,7 +210,6 @@ export default function ShareButton() {
             : "opacity-0 translate-y-6 pointer-events-none"
         }`}
       >
-        {/* Share menu popup */}
         <div
           className={`absolute bottom-0 right-14 transition-all duration-200 ${
             showShareMenu
@@ -194,7 +218,9 @@ export default function ShareButton() {
           }`}
         >
           <div className="bg-white rounded-xl shadow-2xl border border-gray-100 p-3 min-w-[200px]">
-            <p className="text-xs text-[#6b7280] font-medium mb-2 px-2">Compartir en:</p>
+            <p className="text-xs text-[#6b7280] font-medium mb-2 px-2">
+              {shareMeta.shareIn}
+            </p>
             <div className="flex flex-col gap-1">
               {shareOptions.map((option) => (
                 <button
@@ -211,7 +237,9 @@ export default function ShareButton() {
                   >
                     {option.icon}
                   </span>
-                  <span className="text-sm text-[#1e3a5f] font-medium">{option.name}</span>
+                  <span className="text-sm text-[#1e3a5f] font-medium">
+                    {option.name}
+                  </span>
                 </button>
               ))}
               <div className="border-t border-gray-100 my-1"></div>
@@ -220,27 +248,29 @@ export default function ShareButton() {
                 className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f5f7fa] transition-colors text-left w-full group"
               >
                 <span className="w-7 h-7 rounded-full flex items-center justify-center bg-[#1e3a5f] text-white shrink-0 group-hover:scale-110 transition-transform">
-                  {copied ? <Check className="w-3.5 h-3.5" /> : <Link className="w-3.5 h-3.5" />}
+                  {copied ? (
+                    <Check className="w-3.5 h-3.5" />
+                  ) : (
+                    <Link className="w-3.5 h-3.5" />
+                  )}
                 </span>
                 <span className="text-sm text-[#1e3a5f] font-medium">
-                  {copied ? "Enlace copiado" : "Copiar enlace"}
+                  {copied ? shareMeta.copied : shareMeta.copy}
                 </span>
               </button>
             </div>
           </div>
         </div>
 
-        {/* Share button */}
         <button
           onClick={() => setShowShareMenu(!showShareMenu)}
           className="w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 bg-[#4a5568] text-white"
-          aria-label="Compartir esta página"
+          aria-label={shareMeta.sharePage}
           style={{ transitionDelay: `${socialLinks.length * 50}ms` }}
         >
           <Share2 className="w-4.5 h-4.5" />
         </button>
 
-        {/* Social link buttons */}
         {socialLinks.map((social, i) => (
           <a
             key={social.name}
@@ -259,7 +289,6 @@ export default function ShareButton() {
         ))}
       </div>
 
-      {/* Main floating toggle button */}
       <button
         onClick={() => {
           setIsExpanded(!isExpanded);
@@ -270,7 +299,7 @@ export default function ShareButton() {
             ? "bg-[#1e3a5f] text-white rotate-45"
             : "bg-[#1e3a5f] text-white hover:bg-[#162d4a]"
         }`}
-        aria-label="Redes sociales"
+        aria-label={shareMeta.social}
       >
         {isExpanded ? (
           <X className="w-5 h-5 -rotate-45" />
