@@ -26,54 +26,54 @@ export default function ServicesSection() {
           badge: "Servicios",
           title: "Soluciones integrales de omnicanalidad",
           description:
-            "Desde la estrategia hasta la implementaciÃ³n, te acompaÃ±amos en cada paso de tu transformaciÃ³n digital.",
-          more: "Conocer mÃ¡s",
+            "Desde la estrategia hasta la implementación, te acompañamos en cada paso de tu transformación digital.",
+          more: "Conocer más",
           ecosystemTitle: "Tu ecosistema omnicanal completo",
           ecosystemDescription:
-            "No solo implementamos WhatsApp. DiseÃ±amos una estrategia integral que conecta todos tus canales de comunicaciÃ³n en una experiencia unificada para tus clientes.",
+            "No solo implementamos WhatsApp. Diseñamos una estrategia integral que conecta todos tus canales de comunicación en una experiencia unificada para tus clientes.",
           ecosystemAlt: "Ecosistema Omnicanal Completo",
           services: [
             {
               icon: MessageSquare,
               title: "WhatsApp Business API",
-              subtitle: "Escala tu atenciÃ³n al cliente sin perder el toque humano",
+              subtitle: "Escala tu atención al cliente sin perder el toque humano",
               description:
-                "Asesoramiento integral para la aprobaciÃ³n e implementaciÃ³n ante Meta. DiseÃ±o de estrategias personalizadas para maximizar el potencial de esta herramienta.",
+                "Asesoramiento integral para la aprobación e implementación ante Meta. Diseño de estrategias personalizadas para maximizar el potencial de esta herramienta.",
             },
             {
               icon: TrendingUp,
-              title: "Estrategias de comunicaciÃ³n digital",
+              title: "Estrategias de comunicación digital",
               subtitle: "Multiplica tu alcance con mensajes que convierten",
               description:
-                "Liderazgo en la creaciÃ³n y ejecuciÃ³n de campaÃ±as de comunicaciÃ³n masiva para impulsar la facturaciÃ³n, el reconocimiento de marca y la expansiÃ³n a nuevos mercados.",
+                "Liderazgo en la creación y ejecución de campañas de comunicación masiva para impulsar la facturación, el reconocimiento de marca y la expansión a nuevos mercados.",
             },
             {
               icon: BarChart3,
               title: "Marketing digital y ventas",
-              subtitle: "Transforma tu equipo en mÃ¡quinas de ventas",
+              subtitle: "Transforma tu equipo en máquinas de ventas",
               description:
-                "FormaciÃ³n y capacitaciÃ³n de equipos comerciales en marketing digital, gerencia de ventas y desarrollo de nuevos productos.",
+                "Formación y capacitación de equipos comerciales en marketing digital, gerencia de ventas y desarrollo de nuevos productos.",
             },
             {
               icon: Settings,
               title: "Integraciones omnicanal",
               subtitle: "Sincroniza tus ventas: Todo en un solo lugar",
               description:
-                "IntegraciÃ³n de plataformas omnicanal y desarrollo de soluciones a medida, como bots de atenciÃ³n al cliente y sistemas de pedidos.",
+                "Integración de plataformas omnicanal y desarrollo de soluciones a medida, como bots de atención al cliente y sistemas de pedidos.",
             },
             {
               icon: Zap,
-              title: "AutomatizaciÃ³n de procesos",
+              title: "Automatización de procesos",
               subtitle: "Ahorra horas de trabajo manual cada semana",
               description:
-                "ImplementaciÃ³n de automatizaciones inteligentes que reducen tiempos de respuesta y mejoran la eficiencia operativa.",
+                "Implementación de automatizaciones inteligentes que reducen tiempos de respuesta y mejoran la eficiencia operativa.",
             },
             {
               icon: UserCheck,
-              title: "ConsultorÃ­a especializada",
-              subtitle: "Soluciones diseÃ±adas exclusivamente para ti",
+              title: "Consultoría especializada",
+              subtitle: "Soluciones diseñadas exclusivamente para ti",
               description:
-                "AsesorÃ­a personalizada segÃºn las necesidades especÃ­ficas de tu empresa. AnÃ¡lisis profundo y soluciones a medida.",
+                "Asesoría personalizada según las necesidades específicas de tu empresa. Análisis profundo y soluciones a medida.",
             },
           ],
           ecosystemItems: [
@@ -81,7 +81,7 @@ export default function ServicesSection() {
             "Redes sociales",
             "Email marketing",
             "CRM integrado",
-            "AnÃ¡lisis y reportes",
+            "Análisis y reportes",
             "Bases de datos",
             "Aumento de ventas",
             "Mejor experiencia",

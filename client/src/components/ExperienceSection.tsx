@@ -20,35 +20,35 @@ export default function ExperienceSection() {
           badge: "Experiencia",
           title: "Trayectoria comprobada",
           description:
-            "MÃ¡s de tres dÃ©cadas transformando empresas a travÃ©s de estrategias digitales innovadoras.",
+            "Más de tres décadas transformando empresas a través de estrategias digitales innovadoras.",
           items: [
             {
               icon: Handshake,
-              title: "Alianzas estratÃ©gicas",
-              subtitle: "35 aÃ±os de relaciones empresariales sÃ³lidas",
+              title: "Alianzas estratégicas",
+              subtitle: "35 años de relaciones empresariales sólidas",
               description:
-                "He establecido acuerdos comerciales a largo plazo con mÃ¡s de 10 CÃ¡maras de Comercio en Colombia, incluyendo Barranquilla, FacatativÃ¡, Tunja y Cartago, asÃ­ como con grandes y medianas empresas del paÃ­s desde 1993.",
+                "He establecido acuerdos comerciales a largo plazo con más de 10 Cámaras de Comercio en Colombia, incluyendo Barranquilla, Facatativá, Tunja y Cartago, así como con grandes y medianas empresas del país desde 1993.",
             },
             {
               icon: Building2,
-              title: "ImplementaciÃ³n de tecnologÃ­a",
+              title: "Implementación de tecnología",
               subtitle: "Experiencia con empresas Fortune 500",
               description:
-                "AcompaÃ±amiento en la implementaciÃ³n de Call Centers para clientes como Ssangyong Motor Colombia y la CÃ¡mara de Comercio de Cali, asÃ­ como para concesionarios de la red Chevrolet.",
+                "Acompañamiento en la implementación de Call Centers para clientes como Ssangyong Motor Colombia y la Cámara de Comercio de Cali, así como para concesionarios de la red Chevrolet.",
             },
             {
               icon: GraduationCap,
-              title: "Docencia y consultorÃ­a",
-              subtitle: "4000+ horas de capacitaciÃ³n impartidas",
+              title: "Docencia y consultoría",
+              subtitle: "4000+ horas de capacitación impartidas",
               description:
-                "Profesor universitario y consultor senior con vasta experiencia en la formaciÃ³n de profesionales en Ã¡reas de gerencia de ventas, marketing y creaciÃ³n de nuevos productos.",
+                "Profesor universitario y consultor senior con vasta experiencia en la formación de profesionales en áreas de gerencia de ventas, marketing y creación de nuevos productos.",
             },
             {
               icon: Smartphone,
-              title: "EspecializaciÃ³n WhatsApp",
+              title: "Especialización WhatsApp",
               subtitle: "Especialista reconocido en omnicanalidad",
               description:
-                "Experto certificado en WhatsApp Business API con implementaciones exitosas en empresas de diversos sectores: retail, servicios, manufactura y educaciÃ³n.",
+                "Experto certificado en WhatsApp Business API con implementaciones exitosas en empresas de diversos sectores: retail, servicios, manufactura y educación.",
             },
           ],
         }

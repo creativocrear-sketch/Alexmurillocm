@@ -2,7 +2,7 @@
  * Design: Corporate Elegance
  * Colors: Navy #1e3a5f, Green #2d5f3f, Gold #d4af37
  * Font: Lora (headings), Poppins (body)
- * Page: {content.heroTitle} â€” {content.heroBadge} del Eje Cafetero
+ * Page: {content.heroTitle} —” {content.heroBadge} del Eje Cafetero
  */
 import { useState } from "react";
 import { Link } from "wouter";
@@ -47,38 +47,38 @@ const routesEs: RouteData[] = [
   {
     id: "salento",
     name: "Salento",
-    subtitle: "La Joya del QuindÃ­o",
+    subtitle: "La Joya del Quindío",
     distance: "125.97 km",
     elevation: "2,456 m",
     movingTime: "6h 05min",
-    estimatedTime: "7â€“8 horas",
+    estimatedTime: "7–8 horas",
     avgSpeed: "20.7 km/h",
     date: "12 de julio de 2025",
-    cities: "Cartago â†’ Pereira â†’ Salento â†’ Pereira â†’ Cartago.",
+    cities: "Cartago → Pereira → Salento → Pereira → Cartago.",
     difficulty: "Alta",
     difficultyColor: "#d97706",
     paragraph1:
-      "Esta ruta es, sin duda, una de las mÃ¡s emblemÃ¡ticas del Eje Cafetero colombiano. El recorrido parte desde el norte del Valle del Cauca y se adentra en el corazÃ³n del QuindÃ­o, atravesando paisajes cafeteros declarados Patrimonio de la Humanidad por la UNESCO. El trayecto pasa por La Virginia y Pereira antes de tomar la vÃ­a hacia Quimbaya y Circasia, pueblos pintorescos de arquitectura antioqueÃ±a donde el aroma del cafÃ© reciÃ©n tostado acompaÃ±a al ciclista. El ascenso final hacia Salento, con sus calles empedradas y sus casas de colores vibrantes, es una recompensa visual que justifica cada pedaleo.",
+      "Esta ruta es, sin duda, una de las más emblemáticas del Eje Cafetero colombiano. El recorrido parte desde el norte del Valle del Cauca y se adentra en el corazón del Quindío, atravesando paisajes cafeteros declarados Patrimonio de la Humanidad por la UNESCO. El trayecto pasa por La Virginia y Pereira antes de tomar la vía hacia Quimbaya y Circasia, pueblos pintorescos de arquitectura antioqueña donde el aroma del café recién tostado acompaña al ciclista. El ascenso final hacia Salento, con sus calles empedradas y sus casas de colores vibrantes, es una recompensa visual que justifica cada pedaleo.",
     paragraph2:
-      "Con 2,456 metros de desnivel acumulado, esta ruta exige una buena preparaciÃ³n fÃ­sica, pero el esfuerzo se compensa con vistas panorÃ¡micas del Valle de Cocora, los imponentes cerros quindÃ­anos y extensos cultivos de cafÃ© y plÃ¡tano. Para ciclistas recreativos, se recomienda planificar entre 7 y 8 horas incluyendo paradas para hidrataciÃ³n y fotografÃ­as. Los tramos entre Quimbaya y Circasia presentan subidas sostenidas que ponen a prueba la resistencia, mientras que el descenso de regreso permite disfrutar de la velocidad con paisajes de ensueÃ±o a ambos lados de la carretera.",
+      "Con 2,456 metros de desnivel acumulado, esta ruta exige una buena preparación física, pero el esfuerzo se compensa con vistas panorámicas del Valle de Cocora, los imponentes cerros quindianos y extensos cultivos de café y plátano. Para ciclistas recreativos, se recomienda planificar entre 7 y 8 horas incluyendo paradas para hidratación y fotografías. Los tramos entre Quimbaya y Circasia presentan subidas sostenidas que ponen a prueba la resistencia, mientras que el descenso de regreso permite disfrutar de la velocidad con paisajes de ensueño a ambos lados de la carretera.",
   },
   {
     id: "filandia",
     name: "Filandia",
-    subtitle: "El Mirador del QuindÃ­o",
+    subtitle: "El Mirador del Quindío",
     distance: "103.39 km",
     elevation: "1,914 m",
     movingTime: "4h 51min",
-    estimatedTime: "6â€“7 horas",
+    estimatedTime: "6–7 horas",
     avgSpeed: "21.3 km/h",
     date: "30 de octubre de 2021",
-    cities: "Cartago â†’ AlcalÃ¡ â†’ Quimbaya â†’ Filandia",
+    cities: "Cartago → Alcalá → Quimbaya → Filandia",
     difficulty: "Alta",
     difficultyColor: "#d97706",
     paragraph1:
-      "Filandia es conocida como \"La Colina Iluminada del QuindÃ­o\" y esta ruta permite descubrir por quÃ©. El recorrido serpentea por carreteras secundarias rodeadas de fincas cafeteras, guaduales y miradores naturales que ofrecen panorÃ¡micas espectaculares del Valle del Cauca y la Cordillera Central. Desde Cartago, la ruta toma direcciÃ³n sur pasando por AlcalÃ¡, un pueblo tranquilo que marca el inicio del ascenso hacia la zona cafetera del QuindÃ­o, para luego continuar por Quimbaya hasta llegar a Filandia, uno de los pueblos mÃ¡s encantadores de Colombia.",
+      "Filandia es conocida como \"La Colina Iluminada del Quindío\" y esta ruta permite descubrir por qué. El recorrido serpentea por carreteras secundarias rodeadas de fincas cafeteras, guaduales y miradores naturales que ofrecen panorámicas espectaculares del Valle del Cauca y la Cordillera Central. Desde Cartago, la ruta toma dirección sur pasando por Alcalá, un pueblo tranquilo que marca el inicio del ascenso hacia la zona cafetera del Quindío, para luego continuar por Quimbaya hasta llegar a Filandia, uno de los pueblos más encantadores de Colombia.",
     paragraph2:
-      "El desnivel de 1,914 metros se distribuye en subidas progresivas que permiten un ritmo constante. Las carreteras estÃ¡n en buen estado y el trÃ¡fico vehicular es moderado, lo que hace de esta ruta una opciÃ³n ideal para ciclistas recreativos que buscan un desafÃ­o sin riesgos excesivos. Para quienes pedalean a ritmo tranquilo, se recomienda un tiempo de entre 6 y 7 horas. No olvide detenerse en el mirador de Filandia, desde donde se divisa el Valle del Cauca en toda su extensiÃ³n, y degustar un cafÃ© de origen en alguna de las tiendas artesanales del pueblo.",
+      "El desnivel de 1,914 metros se distribuye en subidas progresivas que permiten un ritmo constante. Las carreteras están en buen estado y el tráfico vehicular es moderado, lo que hace de esta ruta una opción ideal para ciclistas recreativos que buscan un desafío sin riesgos excesivos. Para quienes pedalean a ritmo tranquilo, se recomienda un tiempo de entre 6 y 7 horas. No olvide detenerse en el mirador de Filandia, desde donde se divisa el Valle del Cauca en toda su extensión, y degustar un café de origen en alguna de las tiendas artesanales del pueblo.",
   },
   {
     id: "alto-de-letras",
@@ -87,16 +87,16 @@ const routesEs: RouteData[] = [
     distance: "115.97 km",
     elevation: "3,629 m",
     movingTime: "7h 31min",
-    estimatedTime: "9â€“11 horas",
+    estimatedTime: "9–11 horas",
     avgSpeed: "15.4 km/h",
     date: "15 de noviembre de 2020",
-    cities: "Cartago â†’ Pereira â†’ Chinchina â†’ Manizales â†’ Alto de Letras",
+    cities: "Cartago → Pereira → Chinchina → Manizales → Alto de Letras",
     difficulty: "Muy Alta",
     difficultyColor: "#dc2626",
     paragraph1:
-      "El Alto de Letras es considerado uno de los ascensos en bicicleta mÃ¡s largos del mundo y un verdadero rito de paso para todo ciclista en Colombia. Con 3,629 metros de desnivel acumulado en poco mÃ¡s de 115 kilÃ³metros, esta ruta es la mÃ¡s exigente de toda la colecciÃ³n. El recorrido parte desde Cartago y asciende progresivamente por la vÃ­a que conduce a Manizales, pasando por el Peaje TarapacÃ¡ y El JazmÃ­n, donde la vegetaciÃ³n cambia dramÃ¡ticamente de zona cÃ¡lida a pÃ¡ramo. La carretera, aunque empinada, estÃ¡ bien pavimentada y ofrece vistas que quitan el aliento: caÃ±ones profundos, cascadas y la inmensidad de la Cordillera Central.",
+      "El Alto de Letras es considerado uno de los ascensos en bicicleta más largos del mundo y un verdadero rito de paso para todo ciclista en Colombia. Con 3,629 metros de desnivel acumulado en poco más de 115 kilómetros, esta ruta es la más exigente de toda la colección. El recorrido parte desde Cartago y asciende progresivamente por la vía que conduce a Manizales, pasando por el Peaje Tarapacá y El Jazmín, donde la vegetación cambia dramáticamente de zona cálida a páramo. La carretera, aunque empinada, está bien pavimentada y ofrece vistas que quitan el aliento: cañones profundos, cascadas y la inmensidad de la Cordillera Central.",
     paragraph2:
-      "Para ciclistas recreativos, esta ruta requiere una planificaciÃ³n cuidadosa. Se recomienda partir muy temprano (antes de las 5:00 AM) y llevar ropa abrigada para la cumbre, donde la temperatura puede descender considerablemente. El tiempo estimado para completar el recorrido es de 9 a 11 horas a ritmo pausado. Es fundamental llevar suficiente hidrataciÃ³n y alimentaciÃ³n, ya que los puntos de abastecimiento son escasos en los tramos mÃ¡s altos. Sin embargo, la satisfacciÃ³n de coronar el Alto de Letras es una experiencia que todo ciclista deberÃ­a vivir al menos una vez en la vida.",
+      "Para ciclistas recreativos, esta ruta requiere una planificación cuidadosa. Se recomienda partir muy temprano (antes de las 5:00 AM) y llevar ropa abrigada para la cumbre, donde la temperatura puede descender considerablemente. El tiempo estimado para completar el recorrido es de 9 a 11 horas a ritmo pausado. Es fundamental llevar suficiente hidratación y alimentación, ya que los puntos de abastecimiento son escasos en los tramos más altos. Sin embargo, la satisfacción de coronar el Alto de Letras es una experiencia que todo ciclista debería vivir al menos una vez en la vida.",
   },
   {
     id: "balboa",
@@ -105,52 +105,52 @@ const routesEs: RouteData[] = [
     distance: "92.27 km",
     elevation: "977 m",
     movingTime: "3h 55min",
-    estimatedTime: "5â€“6 horas",
+    estimatedTime: "5–6 horas",
     avgSpeed: "23.5 km/h",
     date: "23 de agosto de 2025",
-    cities: "Cartago â†’ La Virginia â†’ Viterbo â†’ Balboa",
+    cities: "Cartago → La Virginia → Viterbo → Balboa",
     difficulty: "Accesible",
     difficultyColor: "#16a34a",
     paragraph1:
-      "La ruta hacia Balboa es una de las mÃ¡s accesibles para ciclistas recreativos que desean explorar el departamento de Risaralda sin enfrentar desniveles extremos. Con apenas 977 metros de elevaciÃ³n acumulada en 92 kilÃ³metros, el recorrido discurre en gran parte por el valle del rÃ­o Risaralda, ofreciendo un terreno relativamente plano con ondulaciones suaves. La vÃ­a pasa por La Virginia, ciudad ribereÃ±a donde confluyen los rÃ­os Cauca y Risaralda, y continÃºa hacia Viterbo y Balboa, municipios rodeados de cultivos de caÃ±a de azÃºcar, cafÃ© y plÃ¡tano.",
+      "La ruta hacia Balboa es una de las más accesibles para ciclistas recreativos que desean explorar el departamento de Risaralda sin enfrentar desniveles extremos. Con apenas 977 metros de elevación acumulada en 92 kilómetros, el recorrido discurre en gran parte por el valle del río Risaralda, ofreciendo un terreno relativamente plano con ondulaciones suaves. La vía pasa por La Virginia, ciudad ribera donde confluyen los ríos Cauca y Risaralda, y continúa hacia Viterbo y Balboa, municipios rodeados de cultivos de caña de azúcar, café y plátano.",
     paragraph2:
-      "El buen estado de la carretera y la velocidad promedio alcanzable (23.5 km/h) hacen de esta ruta una excelente opciÃ³n para quienes se inician en recorridos largos. Para ciclistas recreativos, el tiempo estimado es de 5 a 6 horas con paradas. Balboa, enclavada en las montaÃ±as risaraldenses, ofrece un ambiente campesino autÃ©ntico y vistas panorÃ¡micas del valle que bien merecen una pausa prolongada antes del regreso. Se recomienda llevar protecciÃ³n solar, ya que gran parte del recorrido transcurre a baja altitud con temperaturas que pueden superar los 30Â°C.",
+      "El buen estado de la carretera y la velocidad promedio alcanzable (23.5 km/h) hacen de esta ruta una excelente opción para quienes se inician en recorridos largos. Para ciclistas recreativos, el tiempo estimado es de 5 a 6 horas con paradas. Balboa, enclavada en las montañas risaraldenses, ofrece un ambiente campesino auténtico y vistas panorámicas del valle que bien merecen una pausa prolongada antes del regreso. Se recomienda llevar protección solar, ya que gran parte del recorrido transcurre a baja altitud con temperaturas que pueden superar los 30°C.",
   },
   {
     id: "belalcazar",
-    name: "BelalcÃ¡zar",
-    subtitle: "Entre MontaÃ±as Cafeteras",
+    name: "Belalcázar",
+    subtitle: "Entre Montañas Cafeteras",
     distance: "91.08 km",
     elevation: "1,547 m",
     movingTime: "4h 36min",
-    estimatedTime: "6â€“7 horas",
+    estimatedTime: "6–7 horas",
     avgSpeed: "19.8 km/h",
     date: "8 de noviembre de 2025",
-    cities: "Cartago â†’ La Virginia â†’ Ansermanuevo â†’ Viterbo â†’ Marsella â†’ BelalcÃ¡zar",
+    cities: "Cartago → La Virginia → Ansermanuevo → Viterbo → Marsella → Belalcázar",
     difficulty: "Moderada",
     difficultyColor: "#d97706",
     paragraph1:
-      "BelalcÃ¡zar, municipio caldense enclavado en la cordillera, es el destino de esta ruta que combina valles cÃ¡lidos con ascensos montaÃ±osos. El recorrido parte hacia La Virginia y Ansermanuevo antes de tomar la vÃ­a hacia Viterbo, donde comienza el ascenso mÃ¡s significativo del dÃ­a. La carretera serpentea entre fincas cafeteras y bosques de guadua, con tramos que ofrecen vistas panorÃ¡micas del caÃ±Ã³n del rÃ­o Risaralda. El paso por Marsella, conocida como \"El Municipio Verde de Colombia\", aÃ±ade un toque cultural al recorrido con su arquitectura patrimonial bien conservada.",
+      "Belalcázar, municipio caldense enclavado en la cordillera, es el destino de esta ruta que combina valles cálidos con ascensos montañosos. El recorrido parte hacia La Virginia y Ansermanuevo antes de tomar la vía hacia Viterbo, donde comienza el ascenso más significativo del día. La carretera serpentea entre fincas cafeteras y bosques de guadua, con tramos que ofrecen vistas panorámicas del cañón del río Risaralda. El paso por Marsella, conocida como \"El Municipio Verde de Colombia\", añade un toque cultural al recorrido con su arquitectura patrimonial bien conservada.",
     paragraph2:
-      "Con 1,547 metros de desnivel, esta ruta presenta un desafÃ­o moderado-alto que requiere buen manejo de los cambios y una cadencia constante en las subidas. El tiempo estimado para ciclistas recreativos es de 6 a 7 horas. Las carreteras estÃ¡n en condiciones aceptables, aunque algunos tramos entre Viterbo y BelalcÃ¡zar pueden presentar baches. Se recomienda llevar al menos dos bidones de agua y aprovechar las tiendas de pueblo para reabastecerse. El regreso ofrece descensos gratificantes que permiten recuperar energÃ­as mientras se disfruta del paisaje cafetero.",
+      "Con 1,547 metros de desnivel, esta ruta presenta un desafío moderado-alto que requiere buen manejo de los cambios y una cadencia constante en las subidas. El tiempo estimado para ciclistas recreativos es de 6 a 7 horas. Las carreteras están en condiciones aceptables, aunque algunos tramos entre Viterbo y Belalcázar pueden presentar baches. Se recomienda llevar al menos dos bidones de agua y aprovechar las tiendas de pueblo para reabastecerse. El regreso ofrece descensos gratificantes que permiten recuperar energías mientras se disfruta del paisaje cafetero.",
   },
   {
     id: "belalcazar-san-jose",
-    name: "BelalcÃ¡zar por Morro Azul y San JosÃ©",
+    name: "Belalcázar por Morro Azul y San José",
     subtitle: "La Ruta Extendida",
     distance: "110.00 km",
     elevation: "1,778 m",
     movingTime: "5h 35min",
-    estimatedTime: "7â€“8 horas",
+    estimatedTime: "7–8 horas",
     avgSpeed: "19.7 km/h",
     date: "17 de abril de 2025",
-    cities: "Cartago â†’ Morro Azul â†’ San JosÃ© â†’ ChinchinÃ¡ â†’ BelalcÃ¡zar â†’ Viterbo",
+    cities: "Cartago → Morro Azul → San José → Chinchiná → Belalcázar → Viterbo",
     difficulty: "Alta",
     difficultyColor: "#d97706",
     paragraph1:
-      "Esta variante de la ruta a BelalcÃ¡zar incorpora el paso por Morro Azul y las partidas hacia San JosÃ©, aÃ±adiendo kilÃ³metros y desnivel a un recorrido ya de por sÃ­ exigente. La ruta ofrece una perspectiva diferente del paisaje cafetero caldense, pasando por zonas rurales menos transitadas donde el ciclista puede disfrutar de la soledad del camino y la belleza agreste de la cordillera. El tramo por Morro Azul es particularmente pintoresco, con vistas al valle del rÃ­o Cauca y plantaciones de cafÃ© que se extienden hasta donde alcanza la vista.",
+      "Esta variante de la ruta a Belalcázar incorpora el paso por Morro Azul y las partidas hacia San José, añadiendo kilómetros y desnivel a un recorrido ya de por sí exigente. La ruta ofrece una perspectiva diferente del paisaje cafetero caldense, pasando por zonas rurales menos transitadas donde el ciclista puede disfrutar de la soledad del camino y la belleza agreste de la cordillera. El tramo por Morro Azul es particularmente pintoresco, con vistas al valle del río Cauca y plantaciones de café que se extienden hasta donde alcanza la vista.",
     paragraph2:
-      "Los 1,778 metros de desnivel se concentran en dos ascensos principales que ponen a prueba la resistencia del ciclista. Para quienes ruedan a ritmo recreativo, se recomienda un tiempo de 7 a 8 horas con paradas estratÃ©gicas en San JosÃ© y ChinchinÃ¡ para hidratarse y alimentarse. Esta ruta es ideal para ciclistas que ya han completado la versiÃ³n corta a BelalcÃ¡zar y buscan un mayor desafÃ­o. Las carreteras secundarias por las que transcurre parte del recorrido tienen menor trÃ¡fico vehicular, lo que aÃ±ade tranquilidad a la experiencia.",
+      "Los 1,778 metros de desnivel se concentran en dos ascensos principales que ponen a prueba la resistencia del ciclista. Para quienes ruedan a ritmo recreativo, se recomienda un tiempo de 7 a 8 horas con paradas estratégicas en San José y Chinchiná para hidratarse y alimentarse. Esta ruta es ideal para ciclistas que ya han completado la versión corta a Belalcázar y buscan un mayor desafío. Las carreteras secundarias por las que transcurre parte del recorrido tienen menor tráfico vehicular, lo que añade tranquilidad a la experiencia.",
   },
   {
     id: "sabanazo",
@@ -159,34 +159,34 @@ const routesEs: RouteData[] = [
     distance: "106.49 km",
     elevation: "1,170 m",
     movingTime: "4h 28min",
-    estimatedTime: "5â€“6 horas",
+    estimatedTime: "5–6 horas",
     avgSpeed: "23.8 km/h",
     date: "16 de agosto de 2025",
-    cities: "Cartago â†’ Ansermanuevo â†’ Argelia â†’ La Virginia â†’ San Pacho",
+    cities: "Cartago → Ansermanuevo → Argelia → La Virginia → San Pacho",
     difficulty: "Moderada",
     difficultyColor: "#d97706",
     paragraph1:
-      "El Sabanazo es un circuito que recorre la zona norte del Valle del Cauca y el sur de Risaralda, pasando por Ansermanuevo, Argelia y La Virginia. Es una ruta que se caracteriza por su terreno ondulado pero sin ascensos prolongados, lo que permite mantener una velocidad promedio alta y disfrutar del paisaje sin el agotamiento de las grandes subidas. El recorrido atraviesa extensas zonas de cultivo de caÃ±a de azÃºcar y cafÃ©, con tramos sombreados por Ã¡rboles centenarios que ofrecen alivio del calor tropical.",
+      "El Sabanazo es un circuito que recorre la zona norte del Valle del Cauca y el sur de Risaralda, pasando por Ansermanuevo, Argelia y La Virginia. Es una ruta que se caracteriza por su terreno ondulado pero sin ascensos prolongados, lo que permite mantener una velocidad promedio alta y disfrutar del paisaje sin el agotamiento de las grandes subidas. El recorrido atraviesa extensas zonas de cultivo de caña de azúcar y café, con tramos sombreados por árboles centenarios que ofrecen alivio del calor tropical.",
     paragraph2:
-      "Con 1,170 metros de desnivel distribuidos uniformemente, esta ruta es perfecta para ciclistas recreativos que buscan distancia sin sufrimiento excesivo. El tiempo estimado para completarla a ritmo tranquilo es de 5 a 6 horas. La carretera principal estÃ¡ en buen estado y el circuito permite regresar al punto de partida sin repetir camino, lo que aÃ±ade variedad al recorrido. Se recomienda rodar temprano en la maÃ±ana para evitar el calor del mediodÃ­a, especialmente en los tramos de baja altitud entre Ansermanuevo y Argelia.",
+      "Con 1,170 metros de desnivel distribuidos uniformemente, esta ruta es perfecta para ciclistas recreativos que buscan distancia sin sufrimiento excesivo. El tiempo estimado para completarla a ritmo tranquilo es de 5 a 6 horas. La carretera principal está en buen estado y el circuito permite regresar al punto de partida sin repetir camino, lo que añade variedad al recorrido. Se recomienda rodar temprano en la mañana para evitar el calor del mediodía, especialmente en los tramos de baja altitud entre Ansermanuevo y Argelia.",
   },
   {
     id: "montenegro",
     name: "Montenegro",
-    subtitle: "CorazÃ³n Cafetero",
+    subtitle: "Corazón Cafetero",
     distance: "87.27 km",
     elevation: "1,676 m",
     movingTime: "4h 14min",
-    estimatedTime: "5â€“6 horas",
+    estimatedTime: "5–6 horas",
     avgSpeed: "20.6 km/h",
     date: "14 de diciembre de 2019",
-    cities: "Cartago â†’ Quimbaya â†’ Montenegro â†’ Pereira",
+    cities: "Cartago → Quimbaya → Montenegro → Pereira",
     difficulty: "Moderada",
     difficultyColor: "#d97706",
     paragraph1:
-      "Aunque no alcanza los 90 kilÃ³metros, la ruta a Montenegro es una de las mÃ¡s gratificantes del Eje Cafetero por la intensidad de sus paisajes y la riqueza cultural de los pueblos que atraviesa. El recorrido pasa por Quimbaya, cuna de la civilizaciÃ³n precolombina del mismo nombre, y llega hasta Montenegro, puerta de entrada al Parque Nacional del CafÃ©. Las carreteras serpentean entre cafetales y plataneras, con subidas y bajadas constantes que mantienen al ciclista activo durante todo el trayecto.",
+      "Aunque no alcanza los 90 kilómetros, la ruta a Montenegro es una de las más gratificantes del Eje Cafetero por la intensidad de sus paisajes y la riqueza cultural de los pueblos que atraviesa. El recorrido pasa por Quimbaya, cuna de la civilización precolombina del mismo nombre, y llega hasta Montenegro, puerta de entrada al Parque Nacional del Café. Las carreteras serpentean entre cafetales y plataneras, con subidas y bajadas constantes que mantienen al ciclista activo durante todo el trayecto.",
     paragraph2:
-      "Los 1,676 metros de desnivel en menos de 90 kilÃ³metros indican un perfil bastante montaÃ±oso, con rampas cortas pero intensas. Para ciclistas recreativos, el tiempo estimado es de 5 a 6 horas. Esta ruta es ideal como introducciÃ³n a los recorridos largos en la regiÃ³n, ya que combina un kilometraje manejable con un desnivel significativo. Se recomienda hacer una parada en Montenegro para visitar alguna finca cafetera y degustar el cafÃ© quindiano, considerado uno de los mejores del mundo.",
+      "Los 1,676 metros de desnivel en menos de 90 kilómetros indican un perfil bastante montañoso, con rampas cortas pero intensas. Para ciclistas recreativos, el tiempo estimado es de 5 a 6 horas. Esta ruta es ideal como introducción a los recorridos largos en la región, ya que combina un kilometraje manejable con un desnivel significativo. Se recomienda hacer una parada en Montenegro para visitar alguna finca cafetera y degustar el café quindiano, considerado uno de los mejores del mundo.",
   },
   {
     id: "marsella",
@@ -195,52 +195,52 @@ const routesEs: RouteData[] = [
     distance: "111.29 km",
     elevation: "1,850 m",
     movingTime: "5h 09min",
-    estimatedTime: "6â€“7 horas",
+    estimatedTime: "6–7 horas",
     avgSpeed: "21.6 km/h",
     date: "24 de octubre de 2020",
-    cities: "Cartago â†’ La Virginia â†’ BelalcÃ¡zar â†’ Marsella â†’ Pereira",
+    cities: "Cartago → La Virginia → Belalcázar → Marsella → Pereira",
     difficulty: "Alta",
     difficultyColor: "#d97706",
     paragraph1:
-      "Marsella, conocida como \"El Municipio Verde de Colombia\", es el destino estrella de esta ruta que combina el valle cÃ¡lido del rÃ­o Cauca con los frescos paisajes montaÃ±osos de Risaralda. El recorrido pasa por La Virginia y BelalcÃ¡zar antes de emprender el ascenso hacia Marsella, un pueblo que conserva intacta su arquitectura antioqueÃ±a de balcones floridos y calles empedradas. Declarado parte del Paisaje Cultural Cafetero, Marsella ofrece al ciclista una experiencia que trasciende lo deportivo y se convierte en un viaje cultural.",
+      "Marsella, conocida como \"El Municipio Verde de Colombia\", es el destino estrella de esta ruta que combina el valle cálido del río Cauca con los frescos paisajes montañosos de Risaralda. El recorrido pasa por La Virginia y Belalcázar antes de emprender el ascenso hacia Marsella, un pueblo que conserva intacta su arquitectura antioqueña de balcones floridos y calles empedradas. Declarado parte del Paisaje Cultural Cafetero, Marsella ofrece al ciclista una experiencia que trasciende lo deportivo y se convierte en un viaje cultural.",
     paragraph2:
-      "El ascenso a Marsella es el punto mÃ¡s exigente de la ruta, con rampas que alcanzan pendientes considerables en los Ãºltimos kilÃ³metros antes del pueblo. Sin embargo, los 1,850 metros de desnivel total se distribuyen de manera que permiten recuperarse en los tramos de valle. Para ciclistas recreativos, se recomienda un tiempo de 6 a 7 horas. No deje de visitar el JardÃ­n BotÃ¡nico y la Casa de la Cultura de Marsella, dos joyas patrimoniales que justifican una parada prolongada antes de emprender el regreso.",
+      "El ascenso a Marsella es el punto más exigente de la ruta, con rampas que alcanzan pendientes considerables en los últimos kilómetros antes del pueblo. Sin embargo, los 1,850 metros de desnivel total se distribuyen de manera que permiten recuperarse en los tramos de valle. Para ciclistas recreativos, se recomienda un tiempo de 6 a 7 horas. No deje de visitar el Jardín Botánico y la Casa de la Cultura de Marsella, dos joyas patrimoniales que justifican una parada prolongada antes de emprender el regreso.",
   },
   {
     id: "chinchina",
-    name: "ChinchinÃ¡",
-    subtitle: "Tierra del Mejor CafÃ©",
+    name: "Chinchiná",
+    subtitle: "Tierra del Mejor Café",
     distance: "117.53 km",
     elevation: "2,028 m",
     movingTime: "5h 48min",
-    estimatedTime: "7â€“8 horas",
+    estimatedTime: "7–8 horas",
     avgSpeed: "20.2 km/h",
     date: "2 de octubre de 2021",
-    cities: "Cartago â†’ La Virginia â†’ BelalcÃ¡zar â†’ Marsella â†’ Palestina â†’ ChinchinÃ¡ â†’ Viterbo",
+    cities: "Cartago → La Virginia → Belalcázar → Marsella → Palestina → Chinchiná → Viterbo",
     difficulty: "Alta",
     difficultyColor: "#d97706",
     paragraph1:
-      "Esta ruta es un gran circuito que recorre tres departamentos (Valle del Cauca, Risaralda y Caldas) y pasa por algunos de los municipios mÃ¡s emblemÃ¡ticos de la zona cafetera colombiana. ChinchinÃ¡, capital cafetera de Caldas, es el punto mÃ¡s lejano del recorrido y se alcanza despuÃ©s de atravesar La Virginia, BelalcÃ¡zar, Marsella y Palestina. Cada pueblo aporta su propia personalidad al viaje: desde el calor ribereÃ±o de La Virginia hasta el fresco aroma del cafÃ© en ChinchinÃ¡, donde se encuentra la planta de liofilizaciÃ³n de cafÃ© mÃ¡s grande de Colombia.",
+      "Esta ruta es un gran circuito que recorre tres departamentos (Valle del Cauca, Risaralda y Caldas) y pasa por algunos de los municipios más emblemáticos de la zona cafetera colombiana. Chinchiná, capital cafetera de Caldas, es el punto más lejano del recorrido y se alcanza después de atravesar La Virginia, Belalcázar, Marsella y Palestina. Cada pueblo aporta su propia personalidad al viaje: desde el calor ribera de La Virginia hasta el fresco aroma del café en Chinchiná, donde se encuentra la planta de liofilización de café más grande de Colombia.",
     paragraph2:
-      "Con 2,028 metros de desnivel y 117 kilÃ³metros, esta ruta es un desafÃ­o serio que requiere buena condiciÃ³n fÃ­sica y planificaciÃ³n. El circuito tiene la ventaja de no repetir camino, lo que mantiene el interÃ©s visual durante todo el recorrido. Para ciclistas recreativos, el tiempo estimado es de 7 a 8 horas. Se recomienda llevar ropa para cambios de temperatura, ya que la ruta oscila entre los 900 y los 1,600 metros de altitud. Los puntos de abastecimiento son frecuentes gracias a la cantidad de pueblos que se atraviesan.",
+      "Con 2,028 metros de desnivel y 117 kilómetros, esta ruta es un desafío serio que requiere buena condición física y planificación. El circuito tiene la ventaja de no repetir camino, lo que mantiene el interés visual durante todo el recorrido. Para ciclistas recreativos, el tiempo estimado es de 7 a 8 horas. Se recomienda llevar ropa para cambios de temperatura, ya que la ruta oscila entre los 900 y los 1,600 metros de altitud. Los puntos de abastecimiento son frecuentes gracias a la cantidad de pueblos que se atraviesan.",
   },
   {
     id: "viterbo-pereira",
-    name: "Viterbo â€” Pereira",
-    subtitle: "La Ruta RÃ¡pida",
+    name: "Viterbo —” Pereira",
+    subtitle: "La Ruta Rápida",
     distance: "117.39 km",
     elevation: "797 m",
     movingTime: "4h 04min",
-    estimatedTime: "5â€“6 horas",
+    estimatedTime: "5–6 horas",
     avgSpeed: "28.8 km/h",
     date: "28 de marzo de 2021",
-    cities: "Cartago â†’ Viterbo â†’ Pereira",
+    cities: "Cartago → Viterbo → Pereira",
     difficulty: "Accesible",
     difficultyColor: "#16a34a",
     paragraph1:
-      "Esta es la ruta mÃ¡s rÃ¡pida de toda la colecciÃ³n, con una velocidad promedio de 28.8 km/h que refleja un perfil predominantemente plano con ondulaciones suaves. El recorrido conecta el norte del Valle del Cauca con Pereira a travÃ©s de Viterbo, siguiendo las vÃ­as principales que discurren por el valle del rÃ­o Cauca y el rÃ­o La Vieja. Es una ruta ideal para entrenamientos de velocidad y resistencia, donde el ciclista puede mantener un ritmo alto sin las interrupciones de grandes ascensos.",
+      "Esta es la ruta más rápida de toda la colección, con una velocidad promedio de 28.8 km/h que refleja un perfil predominantemente plano con ondulaciones suaves. El recorrido conecta el norte del Valle del Cauca con Pereira a través de Viterbo, siguiendo las vías principales que discurren por el valle del río Cauca y el río La Vieja. Es una ruta ideal para entrenamientos de velocidad y resistencia, donde el ciclista puede mantener un ritmo alto sin las interrupciones de grandes ascensos.",
     paragraph2:
-      "Con apenas 797 metros de desnivel en 117 kilÃ³metros, esta ruta es la mÃ¡s accesible para ciclistas recreativos que desean completar una distancia considerable sin el sufrimiento de las montaÃ±as. El tiempo estimado a ritmo tranquilo es de 5 a 6 horas. La carretera estÃ¡ en excelente estado y conecta zonas urbanas e industriales con tramos rurales de gran belleza. Se recomienda especial precauciÃ³n con el trÃ¡fico vehicular en las cercanÃ­as de Pereira y prestar atenciÃ³n a los vientos cruzados en los tramos abiertos del valle.",
+      "Con apenas 797 metros de desnivel en 117 kilómetros, esta ruta es la más accesible para ciclistas recreativos que desean completar una distancia considerable sin el sufrimiento de las montañas. El tiempo estimado a ritmo tranquilo es de 5 a 6 horas. La carretera está en excelente estado y conecta zonas urbanas e industriales con tramos rurales de gran belleza. Se recomienda especial precaución con el tráfico vehicular en las cercanías de Pereira y prestar atención a los vientos cruzados en los tramos abiertos del valle.",
   },
   {
     id: "el-manzano",
@@ -249,16 +249,16 @@ const routesEs: RouteData[] = [
     distance: "83.22 km",
     elevation: "1,377 m",
     movingTime: "3h 43min",
-    estimatedTime: "4â€“5 horas",
+    estimatedTime: "4–5 horas",
     avgSpeed: "22.3 km/h",
     date: "21 de marzo de 2021",
-    cities: "Cartago â†’ La Virginia â†’ Marsella â†’ El Manzano â†’ Dosquebradas",
+    cities: "Cartago → La Virginia → Marsella → El Manzano → Dosquebradas",
     difficulty: "Moderada",
     difficultyColor: "#d97706",
     paragraph1:
-      "Aunque es la ruta mÃ¡s corta de la colecciÃ³n, El Manzano ofrece uno de los ascensos mÃ¡s bonitos de la regiÃ³n. El recorrido parte hacia La Virginia y toma la vÃ­a hacia Marsella, pero en lugar de subir al pueblo, se desvÃ­a hacia El Manzano, una vereda enclavada en la montaÃ±a donde los bosques de guadua y los cafetales crean un tÃºnel verde que envuelve al ciclista. El tramo final hacia Dosquebradas ofrece un descenso tÃ©cnico con curvas cerradas y vistas al valle de Pereira.",
+      "Aunque es la ruta más corta de la colección, El Manzano ofrece uno de los ascensos más bonitos de la región. El recorrido parte hacia La Virginia y toma la vía hacia Marsella, pero en lugar de subir al pueblo, se desvía hacia El Manzano, una vereda enclavada en la montaña donde los bosques de guadua y los cafetales crean un túnel verde que envuelve al ciclista. El tramo final hacia Dosquebradas ofrece un descenso técnico con curvas cerradas y vistas al valle de Pereira.",
     paragraph2:
-      "Los 1,377 metros de desnivel se concentran en el ascenso a El Manzano, lo que significa rampas exigentes pero de duraciÃ³n moderada. Para ciclistas recreativos, el tiempo estimado es de 4 a 5 horas. Esta ruta es perfecta para media jornada y se puede combinar con una visita a Marsella si se desea extender el recorrido. La carretera hacia El Manzano es estrecha y con poco trÃ¡fico, lo que la convierte en una de las mÃ¡s seguras y placenteras para rodar en bicicleta.",
+      "Los 1,377 metros de desnivel se concentran en el ascenso a El Manzano, lo que significa rampas exigentes pero de duración moderada. Para ciclistas recreativos, el tiempo estimado es de 4 a 5 horas. Esta ruta es perfecta para media jornada y se puede combinar con una visita a Marsella si se desea extender el recorrido. La carretera hacia El Manzano es estrecha y con poco tráfico, lo que la convierte en una de las más seguras y placenteras para rodar en bicicleta.",
   },
   {
     id: "circasia",
@@ -267,16 +267,16 @@ const routesEs: RouteData[] = [
     distance: "114.98 km",
     elevation: "2,055 m",
     movingTime: "5h 04min",
-    estimatedTime: "7â€“8 horas",
+    estimatedTime: "7–8 horas",
     avgSpeed: "22.6 km/h",
     date: "17 de octubre de 2020",
-    cities: "Cartago â†’ La Virginia â†’ Marsella â†’ El Manzano â†’ Quimbaya â†’ Montenegro â†’ Circasia",
+    cities: "Cartago → La Virginia → Marsella → El Manzano → Quimbaya → Montenegro → Circasia",
     difficulty: "Alta",
     difficultyColor: "#d97706",
     paragraph1:
-      "Este gran circuito es quizÃ¡s el recorrido mÃ¡s completo para conocer el Eje Cafetero sobre dos ruedas. La ruta pasa por La Virginia, sube hacia Marsella y El Manzano, desciende hacia Quimbaya y Montenegro, y culmina en Circasia antes de regresar al punto de partida. Cada tramo ofrece un paisaje diferente: el valle cÃ¡lido del rÃ­o Cauca, los bosques montaÃ±osos de Risaralda, los cafetales ondulados del QuindÃ­o y los pueblos coloridos que son el alma del Eje Cafetero.",
+      "Este gran circuito es quizás el recorrido más completo para conocer el Eje Cafetero sobre dos ruedas. La ruta pasa por La Virginia, sube hacia Marsella y El Manzano, desciende hacia Quimbaya y Montenegro, y culmina en Circasia antes de regresar al punto de partida. Cada tramo ofrece un paisaje diferente: el valle cálido del río Cauca, los bosques montañosos de Risaralda, los cafetales ondulados del Quindío y los pueblos coloridos que son el alma del Eje Cafetero.",
     paragraph2:
-      "Con 2,055 metros de desnivel y casi 115 kilÃ³metros, este circuito exige resistencia y buen manejo del esfuerzo. La ventaja es que al ser circular, nunca se repite camino y la variedad de paisajes mantiene la motivaciÃ³n alta. Para ciclistas recreativos, el tiempo estimado es de 7 a 8 horas. Circasia, conocida como \"La Villa del QuindÃ­o\", merece una parada para recorrer su cementerio libre (Ãºnico en Colombia) y disfrutar de su gastronomÃ­a local. Se recomienda llevar luces traseras y delanteras por si el recorrido se extiende hasta el atardecer.",
+      "Con 2,055 metros de desnivel y casi 115 kilómetros, este circuito exige resistencia y buen manejo del esfuerzo. La ventaja es que al ser circular, nunca se repite camino y la variedad de paisajes mantiene la motivación alta. Para ciclistas recreativos, el tiempo estimado es de 7 a 8 horas. Circasia, conocida como \"La Villa del Quindío\", merece una parada para recorrer su cementerio libre (único en Colombia) y disfrutar de su gastronomía local. Se recomienda llevar luces traseras y delanteras por si el recorrido se extiende hasta el atardecer.",
   },
   {
     id: "altagracia-zaragoza",
@@ -285,16 +285,16 @@ const routesEs: RouteData[] = [
     distance: "124.09 km",
     elevation: "1,998 m",
     movingTime: "~6h (estimado)",
-    estimatedTime: "7â€“9 horas",
+    estimatedTime: "7–9 horas",
     avgSpeed: "~20 km/h",
     date: "Fecha no disponible",
-    cities: "Cartago â†’ Pereira â†’ Dosquebradas â†’ Quimbaya â†’ Circasia â†’ Armenia â†’ Altagracia â†’ Zaragoza",
+    cities: "Cartago → Pereira → Dosquebradas → Quimbaya → Circasia → Armenia → Altagracia → Zaragoza",
     difficulty: "Alta",
     difficultyColor: "#d97706",
     paragraph1:
-      "Esta ruta es una de las mÃ¡s largas y completas, conectando el norte del Valle del Cauca con la capital del QuindÃ­o. El recorrido pasa por Pereira y Dosquebradas antes de adentrarse en el corazÃ³n cafetero por Quimbaya y Circasia, para finalmente llegar a las inmediaciones de Armenia. Los tramos por Altagracia y Zaragoza aÃ±aden variedad al recorrido, con subidas y bajadas que caracterizan la topografÃ­a ondulada de la regiÃ³n.",
+      "Esta ruta es una de las más largas y completas, conectando el norte del Valle del Cauca con la capital del Quindío. El recorrido pasa por Pereira y Dosquebradas antes de adentrarse en el corazón cafetero por Quimbaya y Circasia, para finalmente llegar a las inmediaciones de Armenia. Los tramos por Altagracia y Zaragoza añaden variedad al recorrido, con subidas y bajadas que caracterizan la topografía ondulada de la región.",
     paragraph2:
-      "Con casi 2,000 metros de desnivel y 124 kilÃ³metros, esta ruta requiere una jornada completa de pedaleo. Para ciclistas recreativos, se estima un tiempo de 7 a 9 horas dependiendo del ritmo y las paradas. La vÃ­a hacia Armenia es una de las mÃ¡s transitadas de la regiÃ³n, por lo que se recomienda especial precauciÃ³n con el trÃ¡fico pesado, especialmente en los tramos cercanos al peaje. Sin embargo, las vistas del paisaje cafetero y la satisfacciÃ³n de conectar dos capitales departamentales sobre la bicicleta hacen de esta ruta una experiencia memorable.",
+      "Con casi 2,000 metros de desnivel y 124 kilómetros, esta ruta requiere una jornada completa de pedaleo. Para ciclistas recreativos, se estima un tiempo de 7 a 9 horas dependiendo del ritmo y las paradas. La vía hacia Armenia es una de las más transitadas de la región, por lo que se recomienda especial precaución con el tráfico pesado, especialmente en los tramos cercanos al peaje. Sin embargo, las vistas del paisaje cafetero y la satisfacción de conectar dos capitales departamentales sobre la bicicleta hacen de esta ruta una experiencia memorable.",
   },
 ];
 
@@ -620,7 +620,7 @@ function RouteCard({
 }
 
 export default function CyclingRoutes() {
-  // Stats summary â€” hardcoded to avoid parsing issues with locale-formatted numbers
+  // Stats summary —” hardcoded to avoid parsing issues with locale-formatted numbers
   const totalKm = 66056;
   const totalElevation = 1271;
   const { language } = useLanguage();
@@ -759,7 +759,7 @@ export default function CyclingRoutes() {
               </h1>
               <p className="text-white/90 text-lg md:text-xl max-w-2xl font-[Poppins] leading-relaxed">
                 Descubre las mejores rutas para rodar en bicicleta por el norte del Valle del Cauca,
-                Risaralda, Caldas y QuindÃ­o. Paisajes cafeteros, montaÃ±as imponentes y carreteras
+                Risaralda, Caldas y Quindío. Paisajes cafeteros, montañas imponentes y carreteras
                 que invitan a pedalear.
               </p>
             </div>
@@ -779,7 +779,7 @@ export default function CyclingRoutes() {
               <p className="text-3xl md:text-4xl font-bold text-[#2d5f3f] font-[Lora]">
                 {Math.round(totalKm).toLocaleString()}
               </p>
-              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">KilÃ³metros recorridos</p>
+              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">Kilómetros recorridos</p>
             </div>
             <div className="text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#d4af37] font-[Lora]">
@@ -799,12 +799,12 @@ export default function CyclingRoutes() {
       <section className="container py-12 md:py-16">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[#3a4a5c] text-base md:text-lg leading-relaxed font-[Poppins]">
-            El Eje Cafetero colombiano es un paraÃ­so para el ciclismo de ruta. Sus carreteras
-            serpentean entre montaÃ±as, valles y pueblos patrimonio, ofreciendo recorridos que
-            combinan el desafÃ­o deportivo con la belleza del Paisaje Cultural Cafetero, declarado
-            Patrimonio de la Humanidad por la UNESCO. A continuaciÃ³n, comparto las rutas que he
+            El Eje Cafetero colombiano es un paraíso para el ciclismo de ruta. Sus carreteras
+            serpentean entre montañas, valles y pueblos patrimonio, ofreciendo recorridos que
+            combinan el desafío deportivo con la belleza del Paisaje Cultural Cafetero, declarado
+            Patrimonio de la Humanidad por la UNESCO. A continuación, comparto las rutas que he
             recorrido como ciclista recreativo, con datos reales y recomendaciones para que te
-            animes a descubrir esta regiÃ³n sobre dos ruedas.
+            animes a descubrir esta región sobre dos ruedas.
           </p>
         </div>
       </section>
@@ -830,14 +830,14 @@ export default function CyclingRoutes() {
                 Alex Murillo
               </h2>
               <p className="text-white/80 text-base leading-relaxed font-[Poppins] mb-3">
-                AdemÃ¡s de ciclista recreativo apasionado por las rutas del Eje Cafetero, soy
+                Además de ciclista recreativo apasionado por las rutas del Eje Cafetero, soy
                 <strong className="text-white"> especialista en omnicanalidad y WhatsApp Business API</strong> con
-                mÃ¡s de 30 aÃ±os de experiencia asesorando empresas en transformaciÃ³n digital.
+                más de 30 años de experiencia asesorando empresas en transformación digital.
               </p>
               <p className="text-white/80 text-base leading-relaxed font-[Poppins] mb-6">
-                Ayudo a empresas a centralizar sus ventas y atenciÃ³n al cliente a travÃ©s de
+                Ayudo a empresas a centralizar sus ventas y atención al cliente a través de
                 estrategias omnicanal que integran WhatsApp, redes sociales, email y CRM en una
-                experiencia unificada. Si buscas escalar tu negocio con comunicaciÃ³n inteligente,
+                experiencia unificada. Si buscas escalar tu negocio con comunicación inteligente,
                 hablemos.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
@@ -884,7 +884,7 @@ export default function CyclingRoutes() {
               <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">Salga temprano</h3>
               <p className="text-[#3a4a5c] text-sm leading-relaxed font-[Poppins]">
                 Inicie su rodada antes de las 6:00 AM para aprovechar las horas frescas y evitar
-                el calor del mediodÃ­a, especialmente en los tramos de baja altitud del valle.
+                el calor del mediodía, especialmente en los tramos de baja altitud del valle.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
@@ -894,16 +894,16 @@ export default function CyclingRoutes() {
               <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">Respete su ritmo</h3>
               <p className="text-[#3a4a5c] text-sm leading-relaxed font-[Poppins]">
                 Los tiempos indicados son de un ciclista experimentado. Agregue entre 30% y 50%
-                mÃ¡s de tiempo si estÃ¡ comenzando. Lo importante es disfrutar, no competir.
+                más de tiempo si está comenzando. Lo importante es disfrutar, no competir.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
               <div className="w-10 h-10 rounded-xl bg-[#2d5f3f]/10 flex items-center justify-center mb-4">
                 <Gauge className="w-5 h-5 text-[#2d5f3f]" />
               </div>
-              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">HidrataciÃ³n y nutriciÃ³n</h3>
+              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">Hidratación y nutrición</h3>
               <p className="text-[#3a4a5c] text-sm leading-relaxed font-[Poppins]">
-                Lleve al menos dos bidones de agua y snacks energÃ©ticos. En rutas largas,
+                Lleve al menos dos bidones de agua y snacks energéticos. En rutas largas,
                 aproveche las tiendas de los pueblos para reabastecerse con frutas, panela y agua.
               </p>
             </div>
@@ -925,7 +925,7 @@ export default function CyclingRoutes() {
       <footer className="bg-[#0f1f30] py-8">
         <div className="container text-center">
           <p className="text-white/50 text-sm font-[Poppins]">
-            &copy; {new Date().getFullYear()} Alex Murillo â€” Ciclista recreativo &amp; Consultor de Omnicanalidad
+            &copy; {new Date().getFullYear()} Alex Murillo —” Ciclista recreativo &amp; Consultor de Omnicanalidad
           </p>
           <div className="flex items-center justify-center gap-4 mt-3">
             <Link href="/" className="text-white/40 text-sm hover:text-white/70 transition-colors font-[Poppins]">

@@ -13,19 +13,19 @@ export default function ContactSection() {
     language === "es"
       ? {
           badge: "Contacto",
-          title: "Â¿Listo para transformar tu negocio?",
+          title: "¿Listo para transformar tu negocio?",
           description:
-            "Agendar una consulta es el primer paso. Te ayudarÃ© a diseÃ±ar la estrategia omnicanal perfecta para tu empresa.",
-          cardTitle: "ConsultorÃ­a para automatizar tu negocio",
+            "Agendar una consulta es el primer paso. Te ayudaré a diseñar la estrategia omnicanal perfecta para tu empresa.",
+          cardTitle: "Consultoría para automatizar tu negocio",
           cardDescription:
-            "Analiza tu situaciÃ³n actual y descubre cÃ³mo WhatsApp Business API puede multiplicar tus ventas. SesiÃ³n de 30 minutos, sin compromiso.",
+            "Analiza tu situación actual y descubre cómo WhatsApp Business API puede multiplicar tus ventas. Sesión de 30 minutos, sin compromiso.",
           whatsappDetail: "Mensaje directo",
           emailDetail: "Respuesta en 24h",
-          socialLabel: "SÃ­gueme en redes sociales",
+          socialLabel: "Sígueme en redes sociales",
           contactMethods: [
             {
               icon: Phone,
-              title: "TelÃ©fono",
+              title: "Teléfono",
               detail: "+57 310 388 2759",
               href: "tel:+573103882759",
             },

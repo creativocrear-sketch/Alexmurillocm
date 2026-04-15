@@ -86,11 +86,11 @@ export default function ShareButton() {
       ? {
           title: "Alex Murillo - Consultor de Omnicanalidad y WhatsApp Business API",
           description:
-            "Estrategias omnicanal con WhatsApp Business API que centralizan tus ventas y atenciÃ³n al cliente. 35+ aÃ±os de experiencia.",
+            "Estrategias omnicanal con WhatsApp Business API que centralizan tus ventas y atención al cliente. 35+ años de experiencia.",
           shareIn: "Compartir en:",
           copied: "Enlace copiado",
           copy: "Copiar enlace",
-          sharePage: "Compartir esta pÃ¡gina",
+          sharePage: "Compartir esta página",
           social: "Redes sociales",
         }
       : {

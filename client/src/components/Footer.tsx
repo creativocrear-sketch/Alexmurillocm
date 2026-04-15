@@ -19,7 +19,7 @@ export default function Footer() {
           description:
             "Consultor Senior en Estrategia Digital, Omnicanalidad y WhatsApp Business API.",
           cycling: "Ciclista recreativo.",
-          navigation: "NavegaciÃ³n",
+          navigation: "Navegación",
           services: "Servicios",
           contact: "Contacto",
           links: [
@@ -31,7 +31,7 @@ export default function Footer() {
           serviceLinks: [
             "WhatsApp Business API",
             "Estrategia omnicanal",
-            "CapacitaciÃ³n digital",
+            "Capacitación digital",
           ],
           rights: "Todos los derechos reservados.",
         }

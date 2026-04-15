@@ -41,20 +41,20 @@ export default function HeroSection() {
   const content =
     language === "es"
       ? {
-          title: "Transforma tu comunicaciÃ³n empresarial",
+          title: "Transforma tu comunicación empresarial",
           description:
-            "Estrategias omnicanal con WhatsApp Business API que centralizan tus ventas y atenciÃ³n al cliente, optimizando la experiencia del usuario y aumentando tu conversiÃ³n.",
+            "Estrategias omnicanal con WhatsApp Business API que centralizan tus ventas y atención al cliente, optimizando la experiencia del usuario y aumentando tu conversión.",
           bullets: [
-            "35+ aÃ±os de experiencia asesorando empresas en transformaciÃ³n digital",
-            "Especialista en WhatsApp Business API y comunicaciÃ³n omnicanal",
+            "35+ años de experiencia asesorando empresas en transformación digital",
+            "Especialista en WhatsApp Business API y comunicación omnicanal",
             "Alianzas con 14 Gremios en Colombia",
           ],
-          primaryCta: "Agendar reuniÃ³n",
+          primaryCta: "Agendar reunión",
           secondaryCta: "Ver portafolio",
           imageAlt: "Alex Murillo - Consultor de Omnicanalidad",
           stats: [
-            { value: "35+", label: "AÃ±os de experiencia" },
-            { value: "4000+", label: "Horas de capacitaciÃ³n" },
+            { value: "35+", label: "Años de experiencia" },
+            { value: "4000+", label: "Horas de capacitación" },
             { value: "14", label: "Gremios en Colombia" },
           ],
         }
