@@ -623,7 +623,7 @@ export default function CyclingRoutes() {
   // Stats summary —” hardcoded to avoid parsing issues with locale-formatted numbers
   const totalKm = 66056;
   const totalElevation = 1271;
-  const { language } = useLanguage();
+  const { language, setLanguage } = useLanguage();
   const routes = language === "es" ? routesEs : routesEn;
   const content =
     language === "es"
@@ -634,8 +634,8 @@ export default function CyclingRoutes() {
           contact: "Contacto",
           schedule: "Agendar Consulta",
           heroAlt: "Ciclismo de ruta en el Eje Cafetero colombiano",
-          heroBadge: "{content.heroBadge}",
-          heroTitle: "{content.heroTitle}",
+          heroBadge: "Ciclismo de Ruta",
+          heroTitle: "Rutas del Eje Cafetero",
           heroDescription:
             "Descubre las mejores rutas para rodar en bicicleta por el norte del Valle del Cauca, Risaralda, Caldas y Quindio. Paisajes cafeteros, montanas imponentes y carreteras que invitan a pedalear.",
           documented: "Rutas documentadas",
@@ -647,12 +647,23 @@ export default function CyclingRoutes() {
           aboutBadge: "Sobre el autor",
           aboutCta: "Conoce mis servicios",
           aboutParagraph1:
-            "Ademas de ciclista recreativo apasionado por las rutas del Eje Cafetero, soy especialista en omnicanalidad y WhatsApp Business API con mas de 30 anos de experiencia asesorando empresas en transformacion digital.",
+            "Además de ciclista recreativo apasionado por las rutas del Eje Cafetero, soy especialista en omnicanalidad y WhatsApp Business API con más de 30 años de experiencia asesorando empresas en transformación digital.",
           aboutParagraph2:
-            "Ayudo a empresas a centralizar sus ventas y atencion al cliente a traves de estrategias omnicanal que integran WhatsApp, redes sociales, email y CRM en una experiencia unificada. Si buscas escalar tu negocio con comunicacion inteligente, hablemos.",
+            "Ayudo a empresas a centralizar sus ventas y atención al cliente a través de estrategias omnicanal que integran WhatsApp, redes sociales, email y CRM en una experiencia unificada. Si buscas escalar tu negocio con comunicación inteligente, hablemos.",
           profileLabel: "Ciclista y Consultor",
           tipsTitle: "Consejos para Ciclistas Recreativos",
           footerCopy: "Ciclista recreativo y Consultor de Omnicanalidad",
+          whatsapp: "WhatsApp",
+          tips: {
+            earlyTitle: "Salga temprano",
+            earlyDesc: "Inicie su rodada antes de las 6:00 AM para aprovechar las horas frescas y evitar el calor del mediodía, especialmente en los tramos de baja altitud del valle.",
+            paceTitle: "Respete su ritmo",
+            paceDesc: "Los tiempos indicados son de un ciclista experimentado. Agregue entre 30% y 50% más de tiempo si está comenzando. Lo importante es disfrutar, no competir.",
+            hydrationTitle: "Hidratación y nutrición",
+            hydrationDesc: "Lleve al menos dos bidones de agua y snacks energéticos. En rutas largas, aproveche las tiendas de los pueblos para reabastecerse con frutas, panela y agua.",
+            safetyTitle: "Seguridad vial",
+            safetyDesc: "Use siempre casco, luces y chaleco reflectivo. Ruede en grupo cuando sea posible y avise a alguien su ruta planificada antes de salir.",
+          },
           home: "Inicio",
           routeCard: {
             photo: "Foto de la ruta",
@@ -692,6 +703,17 @@ export default function CyclingRoutes() {
           profileLabel: "Cyclist and Consultant",
           tipsTitle: "Tips for Recreational Cyclists",
           footerCopy: "Recreational cyclist and Omnichannel Consultant",
+          whatsapp: "WhatsApp",
+          tips: {
+            earlyTitle: "Start early",
+            earlyDesc: "Start your ride before 6:00 AM to take advantage of cooler hours and avoid midday heat, especially on low-altitude valley sections.",
+            paceTitle: "Respect your pace",
+            paceDesc: "The indicated times are from an experienced cyclist. Add 30% to 50% more time if you are just starting. The important thing is to enjoy, not compete.",
+            hydrationTitle: "Hydration and nutrition",
+            hydrationDesc: "Carry at least two water bottles and energy snacks. On long rides, take advantage of village shops to restock with fruits, panela, and water.",
+            safetyTitle: "Road safety",
+            safetyDesc: "Always wear a helmet, lights, and reflective vest. Ride in groups when possible and inform someone of your planned route before leaving.",
+          },
           home: "Home",
           routeCard: {
             photo: "Route photo",
@@ -725,6 +747,14 @@ export default function CyclingRoutes() {
             <a href="/#contacto" className="bg-[#1e3a5f] text-white px-4 py-2 rounded-lg text-sm font-[Poppins] font-medium hover:bg-[#162d4a] transition-colors">{content.schedule}</a>
           </div>
           <div className="flex items-center gap-3">
+            <button
+              onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[#e5e7eb] hover:bg-[#f5f7fa] transition-colors"
+            >
+              <span className="text-sm font-medium text-[#1e3a5f] font-[Poppins]">
+                {language === 'es' ? 'EN' : 'ES'}
+              </span>
+            </button>
             <a
               href="/"
               className="flex items-center gap-2 group"
@@ -758,9 +788,7 @@ export default function CyclingRoutes() {
                 {content.heroTitle}
               </h1>
               <p className="text-white/90 text-lg md:text-xl max-w-2xl font-[Poppins] leading-relaxed">
-                Descubre las mejores rutas para rodar en bicicleta por el norte del Valle del Cauca,
-                Risaralda, Caldas y Quindío. Paisajes cafeteros, montañas imponentes y carreteras
-                que invitan a pedalear.
+                {content.heroDescription}
               </p>
             </div>
           </div>
@@ -773,23 +801,23 @@ export default function CyclingRoutes() {
           <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8 grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#1e3a5f] font-[Lora]">{routes.length}</p>
-              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">Rutas documentadas</p>
+              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">{content.documented}</p>
             </div>
             <div className="text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#2d5f3f] font-[Lora]">
                 {Math.round(totalKm).toLocaleString()}
               </p>
-              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">Kilómetros recorridos</p>
+              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">{content.kilometers}</p>
             </div>
             <div className="text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#d4af37] font-[Lora]">
                 {Math.round(totalElevation).toLocaleString()}
               </p>
-              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">Entrenamientos</p>
+              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">{content.trainings}</p>
             </div>
             <div className="text-center">
               <p className="text-3xl md:text-4xl font-bold text-[#1e3a5f] font-[Lora]">4</p>
-              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">Departamentos</p>
+              <p className="text-sm text-gray-500 mt-1 font-[Poppins]">{content.departments}</p>
             </div>
           </div>
         </div>
@@ -799,12 +827,7 @@ export default function CyclingRoutes() {
       <section className="container py-12 md:py-16">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[#3a4a5c] text-base md:text-lg leading-relaxed font-[Poppins]">
-            El Eje Cafetero colombiano es un paraíso para el ciclismo de ruta. Sus carreteras
-            serpentean entre montañas, valles y pueblos patrimonio, ofreciendo recorridos que
-            combinan el desafío deportivo con la belleza del Paisaje Cultural Cafetero, declarado
-            Patrimonio de la Humanidad por la UNESCO. A continuación, comparto las rutas que he
-            recorrido como ciclista recreativo, con datos reales y recomendaciones para que te
-            animes a descubrir esta región sobre dos ruedas.
+            {content.intro}
           </p>
         </div>
       </section>
@@ -824,28 +847,23 @@ export default function CyclingRoutes() {
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="flex-1 text-center md:text-left">
               <p className="text-[#d4af37] font-semibold text-sm tracking-widest uppercase mb-3 font-[Poppins]">
-                Sobre el autor
+                {content.aboutBadge}
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white font-[Lora] mb-4">
                 Alex Murillo
               </h2>
               <p className="text-white/80 text-base leading-relaxed font-[Poppins] mb-3">
-                Además de ciclista recreativo apasionado por las rutas del Eje Cafetero, soy
-                <strong className="text-white"> especialista en omnicanalidad y WhatsApp Business API</strong> con
-                más de 30 años de experiencia asesorando empresas en transformación digital.
+                {content.aboutParagraph1}
               </p>
               <p className="text-white/80 text-base leading-relaxed font-[Poppins] mb-6">
-                Ayudo a empresas a centralizar sus ventas y atención al cliente a través de
-                estrategias omnicanal que integran WhatsApp, redes sociales, email y CRM en una
-                experiencia unificada. Si buscas escalar tu negocio con comunicación inteligente,
-                hablemos.
+                {content.aboutParagraph2}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <a
                   href="/"
                   className="inline-flex items-center justify-center gap-2 bg-[#d4af37] text-[#1e3a5f] px-6 py-3 rounded-lg font-semibold text-sm hover:bg-[#c9a432] transition-colors font-[Poppins]"
                 >
-                  Conoce mis servicios
+                  {content.aboutCta}
                 </a>
                 <a
                   href="https://wa.me/573103882759"
@@ -854,7 +872,7 @@ export default function CyclingRoutes() {
                   className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-white/10 transition-colors font-[Poppins]"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  WhatsApp
+                  {content.whatsapp}
                 </a>
               </div>
             </div>
@@ -863,7 +881,7 @@ export default function CyclingRoutes() {
                 <div className="w-20 h-20 rounded-full bg-[#d4af37]/20 flex items-center justify-center mx-auto mb-3">
                   <Bike className="w-10 h-10 text-[#d4af37]" />
                 </div>
-                <p className="text-white/60 text-xs font-[Poppins]">Ciclista &amp; Consultor</p>
+                <p className="text-white/60 text-xs font-[Poppins]">{content.profileLabel}</p>
               </div>
             </div>
           </div>
@@ -874,47 +892,43 @@ export default function CyclingRoutes() {
       <section className="container py-16 md:py-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] font-[Lora] text-center mb-10">
-            Consejos para Ciclistas Recreativos
+            {content.tipsTitle}
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
               <div className="w-10 h-10 rounded-xl bg-[#2d5f3f]/10 flex items-center justify-center mb-4">
                 <Clock className="w-5 h-5 text-[#2d5f3f]" />
               </div>
-              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">Salga temprano</h3>
+              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">{content.tips.earlyTitle}</h3>
               <p className="text-[#3a4a5c] text-sm leading-relaxed font-[Poppins]">
-                Inicie su rodada antes de las 6:00 AM para aprovechar las horas frescas y evitar
-                el calor del mediodía, especialmente en los tramos de baja altitud del valle.
+                {content.tips.earlyDesc}
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
               <div className="w-10 h-10 rounded-xl bg-[#2d5f3f]/10 flex items-center justify-center mb-4">
                 <Mountain className="w-5 h-5 text-[#2d5f3f]" />
               </div>
-              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">Respete su ritmo</h3>
+              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">{content.tips.paceTitle}</h3>
               <p className="text-[#3a4a5c] text-sm leading-relaxed font-[Poppins]">
-                Los tiempos indicados son de un ciclista experimentado. Agregue entre 30% y 50%
-                más de tiempo si está comenzando. Lo importante es disfrutar, no competir.
+                {content.tips.paceDesc}
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
               <div className="w-10 h-10 rounded-xl bg-[#2d5f3f]/10 flex items-center justify-center mb-4">
                 <Gauge className="w-5 h-5 text-[#2d5f3f]" />
               </div>
-              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">Hidratación y nutrición</h3>
+              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">{content.tips.hydrationTitle}</h3>
               <p className="text-[#3a4a5c] text-sm leading-relaxed font-[Poppins]">
-                Lleve al menos dos bidones de agua y snacks energéticos. En rutas largas,
-                aproveche las tiendas de los pueblos para reabastecerse con frutas, panela y agua.
+                {content.tips.hydrationDesc}
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
               <div className="w-10 h-10 rounded-xl bg-[#2d5f3f]/10 flex items-center justify-center mb-4">
                 <MapPin className="w-5 h-5 text-[#2d5f3f]" />
               </div>
-              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">Seguridad vial</h3>
+              <h3 className="text-lg font-bold text-[#1e3a5f] font-[Lora] mb-2">{content.tips.safetyTitle}</h3>
               <p className="text-[#3a4a5c] text-sm leading-relaxed font-[Poppins]">
-                Use siempre casco, luces y chaleco reflectivo. Ruede en grupo cuando sea posible
-                y avise a alguien su ruta planificada antes de salir.
+                {content.tips.safetyDesc}
               </p>
             </div>
           </div>
@@ -925,15 +939,15 @@ export default function CyclingRoutes() {
       <footer className="bg-[#0f1f30] py-8">
         <div className="container text-center">
           <p className="text-white/50 text-sm font-[Poppins]">
-            &copy; {new Date().getFullYear()} Alex Murillo —” Ciclista recreativo &amp; Consultor de Omnicanalidad
+            &copy; {new Date().getFullYear()} Alex Murillo —” {content.footerCopy}
           </p>
           <div className="flex items-center justify-center gap-4 mt-3">
             <Link href="/" className="text-white/40 text-sm hover:text-white/70 transition-colors font-[Poppins]">
-              Inicio
+              {content.home}
             </Link>
             <span className="text-white/20">|</span>
             <a href="/#contacto" className="text-white/40 text-sm hover:text-white/70 transition-colors font-[Poppins]">
-              Contacto
+              {content.contact}
             </a>
           </div>
         </div>

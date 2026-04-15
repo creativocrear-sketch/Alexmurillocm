@@ -124,26 +124,46 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-          {content.contactMethods.map((method, i) => (
-            <a
-              key={i}
-              href={method.href}
-              target={method.href.startsWith("http") ? "_blank" : undefined}
-              rel={method.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="bg-[#f5f7fa] dark:bg-slate-800 rounded-xl p-6 text-center hover:shadow-md transition-all duration-300 border border-transparent hover:border-[#e5e7eb] dark:hover:border-slate-700 group"
-            >
-              <div className="w-14 h-14 bg-[#2d5f3f]/10 dark:bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-[#2d5f3f]/20 dark:group-hover:bg-green-500/20 transition-colors">
-                <method.icon className="w-6 h-6 text-[#2d5f3f] dark:text-green-400" />
-              </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {content.contactMethods.slice(0, 2).map((method, i) => (
+              <a
+                key={i}
+                href={method.href}
+                target={method.href.startsWith("http") ? "_blank" : undefined}
+                rel={method.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="bg-[#f5f7fa] dark:bg-slate-800 rounded-xl p-6 text-center hover:shadow-md transition-all duration-300 border border-transparent hover:border-[#e5e7eb] dark:hover:border-slate-700 group"
+              >
+                <div className="w-14 h-14 bg-[#2d5f3f]/10 dark:bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-[#2d5f3f]/20 dark:group-hover:bg-green-500/20 transition-colors">
+                  <method.icon className="w-6 h-6 text-[#2d5f3f] dark:text-green-400" />
+                </div>
+                <h4 className="text-[#1e3a5f] dark:text-white font-semibold mb-1 font-[Poppins]">
+                  {method.title}
+                </h4>
+                <p className="text-sm text-[#6b7280] dark:text-slate-300 font-[Poppins]">
+                  {method.detail}
+                </p>
+              </a>
+            ))}
+          </div>
+          <a
+            href={content.contactMethods[2].href}
+            target={content.contactMethods[2].href.startsWith("http") ? "_blank" : undefined}
+            rel={content.contactMethods[2].href.startsWith("http") ? "noopener noreferrer" : undefined}
+            className="bg-[#f5f7fa] dark:bg-slate-800 rounded-xl p-6 text-center hover:shadow-md transition-all duration-300 border border-transparent hover:border-[#e5e7eb] dark:hover:border-slate-700 group flex items-center justify-center gap-4"
+          >
+            <div className="w-14 h-14 bg-[#2d5f3f]/10 dark:bg-green-500/10 rounded-full flex items-center justify-center group-hover:bg-[#2d5f3f]/20 dark:group-hover:bg-green-500/20 transition-colors flex-shrink-0">
+              <MessageCircle className="w-6 h-6 text-[#2d5f3f] dark:text-green-400" />
+            </div>
+            <div className="text-left">
               <h4 className="text-[#1e3a5f] dark:text-white font-semibold mb-1 font-[Poppins]">
-                {method.title}
+                WhatsApp
               </h4>
               <p className="text-sm text-[#6b7280] dark:text-slate-300 font-[Poppins]">
-                {method.detail}
+                Disponible 24/7
               </p>
-            </a>
-          ))}
+            </div>
+          </a>
         </div>
 
         <div className="text-center mt-12">
